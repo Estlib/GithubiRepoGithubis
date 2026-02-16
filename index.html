@@ -96,7 +96,65 @@
             padding-left: 12px;
         }
         /* Rasmus */
+        /* Siim */
+        .siimAinemapp2026-container {
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 650px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
+  .siimAinemapp2026-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+  }
+
+  .siimAinemapp2026-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+
+  .siimAinemapp2026-slogan {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 18px;
+    opacity: 0.9;
+  }
+
+  .siimAinemapp2026-description {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+
+  .siimAinemapp2026-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00c9ff;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .siimAinemapp2026-button:hover {
+    background-color: #92fe9d;
+    transform: scale(1.05);
+  }
+
+  .siimAinemapp2026-dynamic {
+    margin-top: 18px;
+    font-size: 14px;
+    opacity: 0.85;
+  }
+        /* Siim */
 
     </style>
 </head>
@@ -145,6 +203,33 @@
     
     </div>    
     <!-- Rasmus -->
+
+    <!-- Siim -->
+    <section class="siimAinemapp2026-container">
+        <h2 class="siimAinemapp2026-title">🤖 Siim Ainemapp</h2>
+        
+        <p class="siimAinemapp2026-slogan">
+          "Loon tulevikku ühe koodi rea haaval😎."
+        </p>
+      
+        <p class="siimAinemapp2026-description">
+            Siin on minu ainemapp.
+        </p>
+      
+        <a href="https://siim-byte.github.io/TarkvaraArendusprotsessTARpe24SiimBeloi/" class="siimAinemapp2026-button">
+          🚀 Ava Ainemapp
+        </a>
+      
+        <div class="siimAinemapp2026-dynamic">
+          📅 Tänane kuupäev: <span id="siimAinemapp2026-date"></span>
+        </div>
+      </section>
+      <script>
+        const siimAinemapp2026_todayDateObject = new Date();
+        document.getElementById("siimAinemapp2026-date").textContent =
+          siimAinemapp2026_todayDateObject.toLocaleDateString();
+      </script>
+      <!-- Siim -->
 
 
 </body>
