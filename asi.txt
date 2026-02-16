@@ -1,34 +1,41 @@
+
+hello world - Saimon
+
 hello
 <<<<<<< HEAD
-<<<<<<< HEAD
+
+world (allan)
+=======
+
+world (Savva)
+world (siim)
+work(George ei jahahahah)
+
+world(juhan)
+
 
 world (kaur)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 world (Kivisild)
-=======
 JAMAICA (Ervin)
->>>>>>> 11e46ed399f07a6c82048c781cdcf1b8e5877235
-=======
 world(airon)
->>>>>>> 4aa38ff3da3882751c43b9d58a2912529d6305e2
-=======
 
 world (siim)
->>>>>>> 9c9af4f7b2e0a1bf8b07e4a34be81c96a45ac87d
->>>>>>> 82e68f3c3c11be0b19960d091ed07ed320b94bce
-=======
-
 world (enrique)
 
 helloworld("print");
 
 
+<<<<<<< HEAD
 >>>>>>> 9c5f497f86ca68b0380724cc4188ad0e85a0a023
 
 KALAPULK ON PARIM!!! Kristopher Žuravljov!!!
 
 
+=======
+
+
+world (rasmus)
+
+>>>>>>> 242cb3ba0cdf6361e1e603e1dc223d56d69daa8e
+>>>>>>> c78e96e1151fd94534107887571bbf7ae5a44edc
