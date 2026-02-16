@@ -1,10 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="juhanstyle.css">
-    <title>Konfliktoorium</title>
+<title>Konfliktoorium</title>
+
+<style>
+/* ===== MINU CRAZY AINEMAPI BLOKK ===== */
+.saimon-wrapper {
+    display:flex;
+    justify-content:center;
+}
+
+/* glow kaart */
+.saimon-card {
+    margin:50px 0;
+    padding:30px;
+    max-width:750px;
+    border-radius:20px;
+    font-family:sans-serif;
+    color:white;
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    box-shadow:0 0 25px rgba(0,200,255,.5);
+    transition:.3s;
+}
+
+/* neon glow hover */
+.saimon-card:hover {
+    transform:scale(1.03);
+    box-shadow:
+        0 0 20px #00f0ff,
+        0 0 40px #00f0ff,
+        0 0 60px #00f0ff;
+}
+
+/* moving gradient overlay */
+.saimon-card::before {
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+    animation:saimonShine 4s linear infinite;
+}
+
+@keyframes saimonShine {
+    0% {transform:translateX(-100%);}
+    100% {transform:translateX(100%);}
+}
+
+.saimon-title {
+    margin-top:0;
+    font-size:2em;
+}
+
+.saimon-slogan {
+    font-weight:bold;
+    font-size:1.2em;
+    color:#00f0ff;
+}
+
+.saimon-btn {
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(45deg,#ff00cc,#3333ff);
+    transition:.3s;
+}
+
+.saimon-btn:hover {
+    letter-spacing:1px;
+    transform:scale(1.08);
+}
+
+/* väike dünaamiline info */
+.saimon-dynamic {
+    margin-top:15px;
+    font-size:.9em;
+    opacity:.85;
+}
+</style>
     <link rel="stylesheet" href="./Ge.css">
     <style>
         /* ========================
@@ -220,61 +306,123 @@
     opacity: 0.85;
   }
         /* Siim */
+        /* ====== AIRONI ERALDI DISAINISÜSTEEM ====== */
+
+#galaktikaBlokkAironX {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(160deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    border-top: 5px solid #00ffe7;
+    overflow: hidden;
+    position: relative;
+}
+
+.pealkiriNeoAironX {
+    font-size: 36px;
+    letter-spacing: 2px;
+    animation: ilmumineSpekterAironX 2s ease-in-out;
+}
+
+.sloganVibeAironX {
+    font-style: italic;
+    color: #00ffe7;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.tutvustusTekstAironX {
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.linkNuppHyperAironX {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    background: #00ffe7;
+    color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.linkNuppHyperAironX:hover {
+    background: #ffffff;
+    transform: scale(1.1) rotate(-2deg);
+}
+
+.interaktiivneEnergiaAironX {
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.interaktiivneEnergiaAironX:hover {
+    background: #00ffe7;
+    transform: scale(1.1);
+}
+
+/* Animatsioon */
+@keyframes ilmumineSpekterAironX {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Täheefekt */
+.taeheSaduAironX {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: kukkumineAironX linear infinite;
+}
+
+@keyframes kukkumineAironX {
+    from { transform: translateY(-10px); }
+    to { transform: translateY(800px); }
+}
+        /*AIRON*/
 
     </style>
 </head>
+
 <body>
-    <h1>TARpe24:</h1>
-    
-    <p>Siin on Tarpe24 õpilaste ainemappide lehed:
-    <!-- Arturi tükk A -->
-    <div class="card" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: 20px; text-align: center; width: 400px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); animation: fadeIn 1.2s ease-in-out;">
-         <h2 style="font-size: 16px; margin-bottom: 20px; letter-spacing: 1px;">Artur Šein</h2>
-         <p style="font-size: 16px; margin-bottom: 20px; opacity: 0.9;">Äge slogan</p>
-         <p style="font-size: 16px; margin-bottom: 20px; opacity: 0.9;">Minu ainemappis ei ole praegu mitte midagi, see on tühi leht.</p>
-         <a href="https://fart1k.github.io/TAARpe24ArturSein/">Tühi ainemapp 🚀</a>
-     </div>
-    <!-- Arturi tükk L -->
-    </p>
 
+<h1>TARpe24:</h1>
+<p>Siin on Tarpe24 õpilaste ainemappide lehed:</p>
 
-    
-    
-    <section id="George_Portfolio">
-  <div class="tap-grid">
-    <div>
-      <div class="tap-badge">
-        <span class="tap-dot"></span>
-        <span>George • Tarkvara Arendusprotsess (TARpe24)</span>
-      </div>
+<!-- ===== MINU REKLAAM BLOKK ===== -->
+<div class="saimon-wrapper">
+<section class="saimon-card">
 
-      <h2 class="tap-title">
-        Ehitan protsessi, mitte ainult koodi
-      </h2>
+<h2 class="saimon-title">🚀 Saimoni Ainemapp</h2>
 
-      <p class="tap-slogan">
-        “Me väntame kiirelt ja tugevalt, kõik koos ühe eest ja üks kõigi eest”
-      </p>
+<p class="saimon-slogan">
+Õpi nutikalt. Koodi julgelt. Ehita tulevikku.
+</p>
 
-      <p class="tap-desc">
-        Minu ainemapp keskendub arendusprotsessile, töökorraldusele ja
-        kvaliteetsele tarkvara loomisele.
-      </p>
+<p>
+Siit leiad minu tarkvaraarenduse materjalid,
+projektid ja eksperimendid. Leht areneb koos
+minu oskustega — check it out 👇
+</p>
 
-      <div class="tap-actions">
-        <a class="tap-btn"
-           href="https://skellzz.github.io/TarkvaraArendusprotsessTARpe24Gorg/"
-           target="_blank" rel="noopener">
-           Minu ainemapp ↗
-        </a>
-      </div>
-    </div>
+<a class="saimon-btn"
+href="https://mrfrend01.github.io/TarkvaraArendusProtsessTARpe24_Saimon/">
+AVA AINEMAPP →
+</a>
 
-    <aside class="tap-card">
-      <b>Kiirülevaade</b>
-      <p class="tap-mini">Ma olen sigma 😅😈😊😍😍❤️👍😘💕🤣😒😘👌👌😒💕💕😍❤️😅👍😊😂😘😒😈😒😍😅❤️❤️👍😈👌👌😊😂😘💕🤣😈😒😅❤️👍😍😉😎🎶🎶🤣</p>
-    </aside>
-  </div>
+<p id="saimonTime" class="saimon-dynamic"></p>
+
 </section>
     <section class="savva-section">
         <div class="savva-card">
@@ -422,66 +570,12 @@
 
 </div>
 
-<marquee style="
-    margin-top:50px;
-    font-size:30px;
-    background:black;
-    color:red;
-    padding:15px;
-    font-weight:bold;
-">
-    ⚡ TARPE24 ⚡ MARTTEN ⚡ AI STYLE ⚡ LEGEND MODE ⚡
-</marquee>
-<!-- Enrique -->
-<style>
-    .enrique-wrapper {
-        margin-top: 60px;
-        padding: 30px;
-        max-width: 500px;
-        border: 2px solid #ff7a00;
-        border-radius: 12px;
-        background-color: #fff8f0;
-        font-family: Arial, sans-serif;
-    }
+<script>
+/* dünaamiline element */
+const now = new Date();
+document.getElementById("saimonTime").textContent =
+"Viimane külastus: " + now.toLocaleString();
+</script>
 
-    .enrique-wrapper h4 {
-        color: #ff7a00;
-        margin-bottom: 15px;
-    }
-
-    .enrique-wrapper p {
-        color: #333;
-        line-height: 1.5;
-        margin-bottom: 20px;
-    }
-
-    .enrique-wrapper a {
-        display: inline-block;
-        text-decoration: none;
-        color: #fff;
-        background-color: #ff7a00;
-        padding: 10px 18px;
-        border-radius: 6px;
-        transition: 0.2s ease;
-    }
-
-    .enrique-wrapper a:hover {
-        background-color: #e66900;
-    }
-</style>
-
-<div class="enrique-wrapper">
-    <h4>Enrique TARpe24 Ainemapp</h4>
-    <p>
-        Lahe häkkeri stiilis ainemapp kus on ka väljatoodud tarkvara arendusprotsess.<br><br>
-        Mega tuff 😎
-    </p>
-    <a href="https://dualifyy.github.io/TarkvaraArendusprotsessTARpe24EnriqueNiit/" target="_blank">
-        Vaata Enrique ainemappi
-    </a>
-</div>
-<!-- Enrique -->
-
-</div>
 </body>
 </html>
