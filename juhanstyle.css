@@ -1,0 +1,35 @@
+.juhan-portfolio-promo {
+    background: linear-gradient(135deg, #1e1e2f, #302b63);
+    color: white;
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.juhan-portfolio-promo .juhan-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.juhan-portfolio-promo .juhan-description {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.juhan-portfolio-promo .juhan-button {
+    display: inline-block;
+    background: #ff7b00;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.juhan-portfolio-promo .juhan-button:hover {
+    background: #ff9500;
+    transform: scale(1.05);
+}
