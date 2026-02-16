@@ -1,3 +1,7 @@
 hello
+<<<<<<< HEAD
 
 world (Kivisild)
+=======
+JAMAICA (Ervin)
+>>>>>>> 11e46ed399f07a6c82048c781cdcf1b8e5877235
