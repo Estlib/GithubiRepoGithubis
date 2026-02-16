@@ -1,33 +1,406 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konfliktoorium</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="juhanstyle.css">
+<title>Konfliktoorium</title>
+
+<style>
+/* ===== MINU CRAZY AINEMAPI BLOKK ===== */
+.saimon-wrapper {
+    display:flex;
+    justify-content:center;
+}
+
+/* glow kaart */
+.saimon-card {
+    margin:50px 0;
+    padding:30px;
+    max-width:750px;
+    border-radius:20px;
+    font-family:sans-serif;
+    color:white;
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    box-shadow:0 0 25px rgba(0,200,255,.5);
+    transition:.3s;
+}
+
+/* neon glow hover */
+.saimon-card:hover {
+    transform:scale(1.03);
+    box-shadow:
+        0 0 20px #00f0ff,
+        0 0 40px #00f0ff,
+        0 0 60px #00f0ff;
+}
+
+/* moving gradient overlay */
+.saimon-card::before {
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+    animation:saimonShine 4s linear infinite;
+}
+
+@keyframes saimonShine {
+    0% {transform:translateX(-100%);}
+    100% {transform:translateX(100%);}
+}
+
+.saimon-title {
+    margin-top:0;
+    font-size:2em;
+}
+
+.saimon-slogan {
+    font-weight:bold;
+    font-size:1.2em;
+    color:#00f0ff;
+}
+
+.saimon-btn {
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(45deg,#ff00cc,#3333ff);
+    transition:.3s;
+}
+
+.saimon-btn:hover {
+    letter-spacing:1px;
+    transform:scale(1.08);
+}
+
+/* väike dünaamiline info */
+.saimon-dynamic {
+    margin-top:15px;
+    font-size:.9em;
+    opacity:.85;
+}
+</style>
+    <link rel="stylesheet" href="./Ge.css">
+    <style>
+        /* ========================
+           SAVVA AINEMAPP OSA
+           ======================== */
+        
+        .savva-section {
+            display: flex;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+        
+        .savva-card {
+            max-width: 600px;
+            width: 100%;
+            background: linear-gradient(
+                135deg,
+                #ffffff 0%,
+                #fff1f1 60%,
+                #ffe5e5 100%
+            );
+            border-radius: 20px;
+            padding: 35px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(196, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .savva-card:hover {
+            transform: translateY(-6px);
+        }
+        
+        .savva-heading {
+            color: #c40000;
+            margin-bottom: 10px;
+        }
+        
+        .savva-slogan {
+            font-weight: 600;
+            color: #a00000;
+            margin-bottom: 15px;
+        }
+        
+        .savva-text {
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            color: #444;
+        }
+        
+        .savva-link {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #c40000;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .savva-link:hover {
+            background: #a00000;
+            transform: scale(1.05);
+        }
+        </style>
+    <link rel="stylesheet" href="kauricss.css">
+    <style>
+        /* Rasmus */
+        .rasmus-wrapper {
+            margin-top: 30px;
+            padding: 30px;
+            max-width: 650px;
+            border-radius: 18px;
+            background: linear-gradient(145deg, #061E29, #1D546D);
+            color: #F3F4F4;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(6, 30, 41, 0.6);
+            transition: all 0.4s ease;
+        }
+
+        .rasmus-wrapper:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(29, 84, 109, 0.7);
+        }
+
+        .rasmus-wrapper::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(243,244,244,0.15), transparent 70%);
+            border-radius: 50%;
+        }
+
+        .rasmus-badge {
+            display: inline-block;
+            background-color: #F3F4F4;
+            color: #061E29;
+            font-weight: bold;
+            padding: 6px 16px;
+            border-radius: 25px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(243,244,244,0.3);
+        }
+
+        .rasmus-title a {
+            text-decoration: none;
+            color: #F3F4F4;
+            font-size: 26px;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .rasmus-title a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0%;
+            height: 2px;
+            background-color: #F3F4F4;
+            transition: width 0.3s ease;
+        }
+
+        .rasmus-title a:hover::after {
+            width: 100%;
+        }
+
+        .rasmus-title a:hover {
+            color: #F3F4F4;
+        }
+
+        .rasmus-description {
+            margin-top: 18px;
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .rasmus-slogan {
+            margin-top: 22px;
+            font-style: italic;
+            font-size: 14px;
+            color: #F3F4F4;
+            opacity: 0.8;
+            border-left: 3px solid #F3F4F4;
+            padding-left: 12px;
+        }
+        /* Rasmus */
+        /* Siim */
+        .siimAinemapp2026-container {
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 650px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .siimAinemapp2026-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+  }
+
+  .siimAinemapp2026-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+
+  .siimAinemapp2026-slogan {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 18px;
+    opacity: 0.9;
+  }
+
+  .siimAinemapp2026-description {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+
+  .siimAinemapp2026-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00c9ff;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .siimAinemapp2026-button:hover {
+    background-color: #92fe9d;
+    transform: scale(1.05);
+  }
+
+  .siimAinemapp2026-dynamic {
+    margin-top: 18px;
+    font-size: 14px;
+    opacity: 0.85;
+  }
+        /* Siim */
+        /* ====== AIRONI ERALDI DISAINISÜSTEEM ====== */
+
+#galaktikaBlokkAironX {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(160deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    border-top: 5px solid #00ffe7;
+    overflow: hidden;
+    position: relative;
+}
+
+.pealkiriNeoAironX {
+    font-size: 36px;
+    letter-spacing: 2px;
+    animation: ilmumineSpekterAironX 2s ease-in-out;
+}
+
+.sloganVibeAironX {
+    font-style: italic;
+    color: #00ffe7;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.tutvustusTekstAironX {
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.linkNuppHyperAironX {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    background: #00ffe7;
+    color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.linkNuppHyperAironX:hover {
+    background: #ffffff;
+    transform: scale(1.1) rotate(-2deg);
+}
+
+.interaktiivneEnergiaAironX {
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.interaktiivneEnergiaAironX:hover {
+    background: #00ffe7;
+    transform: scale(1.1);
+}
+
+/* Animatsioon */
+@keyframes ilmumineSpekterAironX {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Täheefekt */
+.taeheSaduAironX {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: kukkumineAironX linear infinite;
+}
+
+@keyframes kukkumineAironX {
+    from { transform: translateY(-10px); }
+    to { transform: translateY(800px); }
+}
+        /*AIRON*/
+
+    </style>
     <link rel="stylesheet" href="./ervinstyle.css">
 </head>
+
 <body>
+<<<<<<< HEAD
     <h1>TARpe24:</h1>
+    
     <p>Siin on Tarpe24 õpilaste ainemappide lehed:
     </p>
-    <div class="cow">
-        <p><b>Tule ja imetle lehma muruplatse!</b></p>
-        <p>
-            Siin on minu ainemapp, milles on kirjeldatud,<br> 
-            millega ma tegelen erinevates ainetundides</p>
-        <br>
-        <div class="flex">
-            <p>
-            <a class="cowLink"
-            href="https://apeirophobia.github.io/TarkvaraarendusprotsessTARpe24Pysijainen/">
-                Lehma muruplatsid</a>
-            </p> 
-            <br>
-            <img class="selfie" style="width: 50%; border-radius: 50%;" src="./batshit.png">
-        </div>
-        
-        <br>
-        <p><b>Ervin Püsijainen</b></p>
-    </div>
 </body>
 </html>
