@@ -1,13 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konfliktoorium</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konfliktoorium</title>
+
+<style>
+/* ===== MINU CRAZY AINEMAPI BLOKK ===== */
+.saimon-wrapper {
+    display:flex;
+    justify-content:center;
+}
+
+/* glow kaart */
+.saimon-card {
+    margin:50px 0;
+    padding:30px;
+    max-width:750px;
+    border-radius:20px;
+    font-family:sans-serif;
+    color:white;
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    box-shadow:0 0 25px rgba(0,200,255,.5);
+    transition:.3s;
+}
+
+/* neon glow hover */
+.saimon-card:hover {
+    transform:scale(1.03);
+    box-shadow:
+        0 0 20px #00f0ff,
+        0 0 40px #00f0ff,
+        0 0 60px #00f0ff;
+}
+
+/* moving gradient overlay */
+.saimon-card::before {
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+    animation:saimonShine 4s linear infinite;
+}
+
+@keyframes saimonShine {
+    0% {transform:translateX(-100%);}
+    100% {transform:translateX(100%);}
+}
+
+.saimon-title {
+    margin-top:0;
+    font-size:2em;
+}
+
+.saimon-slogan {
+    font-weight:bold;
+    font-size:1.2em;
+    color:#00f0ff;
+}
+
+.saimon-btn {
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(45deg,#ff00cc,#3333ff);
+    transition:.3s;
+}
+
+.saimon-btn:hover {
+    letter-spacing:1px;
+    transform:scale(1.08);
+}
+
+/* väike dünaamiline info */
+.saimon-dynamic {
+    margin-top:15px;
+    font-size:.9em;
+    opacity:.85;
+}
+</style>
 </head>
+
 <body>
-    <h1>TARpe24:</h1>
-    <p>Siin on Tarpe24 õpilaste ainemappide lehed:
-    </p>
+
+<h1>TARpe24:</h1>
+<p>Siin on Tarpe24 õpilaste ainemappide lehed:</p>
+
+<!-- ===== MINU REKLAAM BLOKK ===== -->
+<div class="saimon-wrapper">
+<section class="saimon-card">
+
+<h2 class="saimon-title">🚀 Saimoni Ainemapp</h2>
+
+<p class="saimon-slogan">
+Õpi nutikalt. Koodi julgelt. Ehita tulevikku.
+</p>
+
+<p>
+Siit leiad minu tarkvaraarenduse materjalid,
+projektid ja eksperimendid. Leht areneb koos
+minu oskustega — check it out 👇
+</p>
+
+<a class="saimon-btn"
+href="https://mrfrend01.github.io/TarkvaraArendusProtsessTARpe24_Saimon/">
+AVA AINEMAPP →
+</a>
+
+<p id="saimonTime" class="saimon-dynamic"></p>
+
+</section>
+</div>
+
+<script>
+/* dünaamiline element */
+const now = new Date();
+document.getElementById("saimonTime").textContent =
+"Viimane külastus: " + now.toLocaleString();
+</script>
+
 </body>
 </html>
