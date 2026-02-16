@@ -3,7 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="juhanstyle.css">
     <title>Konfliktoorium</title>
+    <link rel="stylesheet" href="./Ge.css">
+    <style>
+        /* ========================
+           SAVVA AINEMAPP OSA
+           ======================== */
+        
+        .savva-section {
+            display: flex;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+        
+        .savva-card {
+            max-width: 600px;
+            width: 100%;
+            background: linear-gradient(
+                135deg,
+                #ffffff 0%,
+                #fff1f1 60%,
+                #ffe5e5 100%
+            );
+            border-radius: 20px;
+            padding: 35px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(196, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .savva-card:hover {
+            transform: translateY(-6px);
+        }
+        
+        .savva-heading {
+            color: #c40000;
+            margin-bottom: 10px;
+        }
+        
+        .savva-slogan {
+            font-weight: 600;
+            color: #a00000;
+            margin-bottom: 15px;
+        }
+        
+        .savva-text {
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            color: #444;
+        }
+        
+        .savva-link {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #c40000;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .savva-link:hover {
+            background: #a00000;
+            transform: scale(1.05);
+        }
+        </style>
+    <link rel="stylesheet" href="kauricss.css">
+    <style>
+        /* Rasmus */
+        .rasmus-wrapper {
+            margin-top: 30px;
+            padding: 30px;
+            max-width: 650px;
+            border-radius: 18px;
+            background: linear-gradient(145deg, #061E29, #1D546D);
+            color: #F3F4F4;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(6, 30, 41, 0.6);
+            transition: all 0.4s ease;
+        }
+
+        .rasmus-wrapper:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(29, 84, 109, 0.7);
+        }
+
+        .rasmus-wrapper::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(243,244,244,0.15), transparent 70%);
+            border-radius: 50%;
+        }
+
+        .rasmus-badge {
+            display: inline-block;
+            background-color: #F3F4F4;
+            color: #061E29;
+            font-weight: bold;
+            padding: 6px 16px;
+            border-radius: 25px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(243,244,244,0.3);
+        }
+
+        .rasmus-title a {
+            text-decoration: none;
+            color: #F3F4F4;
+            font-size: 26px;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .rasmus-title a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0%;
+            height: 2px;
+            background-color: #F3F4F4;
+            transition: width 0.3s ease;
+        }
+
+        .rasmus-title a:hover::after {
+            width: 100%;
+        }
+
+        .rasmus-title a:hover {
+            color: #F3F4F4;
+        }
+
+        .rasmus-description {
+            margin-top: 18px;
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .rasmus-slogan {
+            margin-top: 22px;
+            font-style: italic;
+            font-size: 14px;
+            color: #F3F4F4;
+            opacity: 0.8;
+            border-left: 3px solid #F3F4F4;
+            padding-left: 12px;
+        }
+        /* Rasmus */
+
+
+    </style>
 </head>
 <body>
     <h1>TARpe24:</h1>
@@ -18,5 +178,176 @@
      </div>
     <!-- Arturi tükk L -->
     </p>
+
+
+    
+    
+    <section id="George_Portfolio">
+  <div class="tap-grid">
+    <div>
+      <div class="tap-badge">
+        <span class="tap-dot"></span>
+        <span>George • Tarkvara Arendusprotsess (TARpe24)</span>
+      </div>
+
+      <h2 class="tap-title">
+        Ehitan protsessi, mitte ainult koodi
+      </h2>
+
+      <p class="tap-slogan">
+        “Me väntame kiirelt ja tugevalt, kõik koos ühe eest ja üks kõigi eest”
+      </p>
+
+      <p class="tap-desc">
+        Minu ainemapp keskendub arendusprotsessile, töökorraldusele ja
+        kvaliteetsele tarkvara loomisele.
+      </p>
+
+      <div class="tap-actions">
+        <a class="tap-btn"
+           href="https://skellzz.github.io/TarkvaraArendusprotsessTARpe24Gorg/"
+           target="_blank" rel="noopener">
+           Minu ainemapp ↗
+        </a>
+      </div>
+    </div>
+
+    <aside class="tap-card">
+      <b>Kiirülevaade</b>
+      <p class="tap-mini">Ma olen sigma 😅😈😊😍😍❤️👍😘💕🤣😒😘👌👌😒💕💕😍❤️😅👍😊😂😘😒😈😒😍😅❤️❤️👍😈👌👌😊😂😘💕🤣😈😒😅❤️👍😍😉😎🎶🎶🤣</p>
+    </aside>
+  </div>
+</section>
+    <section class="savva-section">
+        <div class="savva-card">
+            <h2 class="savva-heading">Savva Ainemapp</h2>
+    
+            <p class="savva-slogan">
+                Siin on minu tehtud tööd ja arendatud projektid.
+            </p>
+    
+            <p class="savva-text">
+                Minu ainemapist leiad õpitud ainete projektid ja tehtud tööd.
+            </p>
+    
+            <a href="https://savvas250.github.io/TarkvaraArendusprotsessTARpe24SavvaSmirnyagin/" class="savva-link">
+                Vaata minu ainemappi →
+            </a>
+        </div>
+    </section>
+    <h3 id="KaurP24">Kauri Tutvustus</h3>
+    <p id="KaurP24">
+        Tere olen Kaur tulen Eestist ning õpin programmeerijana<br>
+        Minu ainemapp on <a id="KaurP24" href="https://nauter1.github.io/TaapTARpe24KaurPakaste/">Siin</a><br>
+        See näitab erinevaid asju millega tegelesin ajal kui õppisin.<br>
+    </p>
+
+
+    <section class="juhan-portfolio-promo">
+        <h2 class="juhan-title">🍏 Juhani lahe portfoolio</h2>
+    
+        <p class="juhan-description">
+            Siit leiad minu ainemapi – projektid, harjutused ja arenduse teekonna.
+        </p>
+    
+        <a 
+            href="https://pluuto960.github.io/TarkvaraArendusProtsessTARpe24JuhanH/" 
+            class="juhan-button"
+            target="_blank"
+        >
+            Vaata minu ainemappi
+        </a>
+    </section>
+    
+    <!-- Rasmus -->
+    <div class="rasmus-wrapper">
+
+        <div class="rasmus-badge">
+            Rasmuse ainemapp
+        </div>
+    
+        <h2 class="rasmus-title">
+            <a href="https://rxsss739.github.io/TarkvaraArendusprotsessTARpe24RasmusKunnus/">
+                Ainemapi link
+            </a>
+        </h2>
+    
+        <p class="rasmus-description">
+            Ainemapis on minu erialal õpitud ained ja minust infot.
+        </p>
+    
+        <p class="rasmus-slogan">
+            Redbull annab tiivad
+        </p>
+    
+    </div>    
+    <!-- Rasmus -->
+
+    <div style="
+    margin-top:60px;
+    padding:50px;
+    background:linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #9900ff);
+    border-radius:30px;
+    box-shadow:0 0 50px yellow;
+    transform:rotate(-2deg) scale(1.05);
+">
+
+    <h1 style="
+        font-size:50px;
+        color:black;
+        text-shadow:3px 3px 0 white;
+        animation:none;
+    ">
+        ⚡ MARTTEN KAJA ⚡<br/>
+        mida vaja???
+    </h1>
+
+    <p style="
+        font-size:22px;
+        background:black;
+        color:#00ff00;
+        padding:20px;
+        border-radius:20px;
+        border:3px solid white;
+        font-family:'Courier New', monospace;
+    ">
+        Minu leht sisaldab MINU STIILIS minu õpitud aineid!!!<br/>
+        Seal on kirjas teemad jnejne... 🤯<br/><br/>
+        Seal on ka minu tutvustus ja pilt.<br/>
+        Lehe stiil on tehtud TEHISINTELLEKTIGA 🤖🔥
+    </p>
+
+    <a href="https://matumatumatumatumatu.github.io/TarkvaraArendusprotsessTARpe24MarttenKaja/"
+       style="
+            display:inline-block;
+            margin-top:30px;
+            padding:20px 40px;
+            font-size:25px;
+            font-weight:bold;
+            background:black;
+            color:yellow;
+            text-decoration:none;
+            border:5px solid white;
+            border-radius:50px;
+            box-shadow:0 0 20px cyan, 0 0 40px magenta;
+            transform:rotate(3deg);
+       ">
+       🚀 VAATA LEHTE KOHE 🚀
+    </a>
+
+</div>
+
+<marquee style="
+    margin-top:50px;
+    font-size:30px;
+    background:black;
+    color:red;
+    padding:15px;
+    font-weight:bold;
+">
+    ⚡ TARPE24 ⚡ MARTTEN ⚡ AI STYLE ⚡ LEGEND MODE ⚡
+</marquee>
+
+</div>
 </body>
 </html>
