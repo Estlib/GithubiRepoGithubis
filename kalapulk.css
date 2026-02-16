@@ -1,0 +1,98 @@
+#kalapulk-container {
+    margin: 60px auto;
+    padding: 0;
+    display: flex; /* Aligns sides and center in a row */
+    justify-content: center;
+    align-items: stretch; /* Forces sides to be same height as center */
+    max-width: 900px;
+    background-color: transparent;
+}
+
+/* Side Image Settings */
+#kalapulk-container .side-image {
+    width: 200px; /* Increased from 60px to 200px */
+    background-size: cover; /* This stops the images from stretching/distorting */
+    background-position: center; /* Keeps the main subject of the image visible */
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    border: 2px solid #8b5a2b; /* Optional: adds a frame to the images to match the scroll */
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Add your image URLs here */
+#kalapulk-container .left-side {
+    background-image: url('https://live.staticflickr.com/1327/533500982_e098b34d1b.jpg'); 
+    margin-right: 0px; /* Removed negative margin so they don't overlap too much */
+    border-radius: 10px 0 0 10px; /* Rounds the outer corners */
+}
+
+#kalapulk-container .right-side {
+    background-image: url('https://www.theartlifegallery.com/blog/wp-content/uploads/2023/09/Image-1-25.jpg');
+    margin-left: 0px;
+    border-radius: 0 10px 10px 0; /* Rounds the outer corners */
+}
+
+#kalapulk-container .glass-card {
+    background-color: #fdf5e6;
+    background-image: radial-gradient(#dcc591 1px, transparent 0);
+    background-size: 40px 40px;
+    border-top: 2px solid #8b5a2b;
+    border-bottom: 2px solid #8b5a2b;
+    padding: 40px;
+    flex-grow: 1; /* Takes up remaining space */
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 40px rgba(220, 197, 145, 0.5) inset;
+    font-family: 'Georgia', serif;
+    color: #4a3728;
+}
+
+#kalapulk-container .slogan {
+    color: #5d4037;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-variant: small-caps;
+    border-bottom: 2px double #8b5a2b;
+}
+
+#kalapulk-container .portfolio-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #8b5a2b;
+    color: #fdf5e6;
+    text-decoration: none;
+    border: 1px solid #4a3728;
+    transition: all 0.2s ease;
+}
+
+#kalapulk-container .portfolio-btn:hover {
+    background-color: #a0522d;
+    transform: scale(1.05);
+}
+
+#kalapulk-container .side-image {
+    animation: slowZoom 10s infinite alternate ease-in-out;
+}
+
+@keyframes slowZoom {
+    from { background-size: 100% 100%; }
+    to { background-size: 115% 115%; }
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
+    75% { transform: rotate(-1deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* 2. Apply it to the slogan when hovered */
+#kalapulk-container .slogan:hover {
+    display: inline-block; /* Required for transform to work perfectly */
+    animation: wiggle 0.3s ease-in-out infinite;
+    cursor: pointer;
+    color: #a0522d; /* Optional: change color slightly when wiggling */
+}
+
