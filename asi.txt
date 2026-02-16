@@ -26,8 +26,16 @@ world (enrique)
 helloworld("print");
 
 
+<<<<<<< HEAD
+>>>>>>> 9c5f497f86ca68b0380724cc4188ad0e85a0a023
+
+KALAPULK ON PARIM!!! Kristopher Žuravljov!!!
+
+
+=======
 
 
 world (rasmus)
 
 >>>>>>> 242cb3ba0cdf6361e1e603e1dc223d56d69daa8e
+>>>>>>> c78e96e1151fd94534107887571bbf7ae5a44edc
