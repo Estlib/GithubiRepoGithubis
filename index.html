@@ -162,6 +162,91 @@
         }
         /* Rasmus */
 
+        /* ====== AIRONI ERALDI DISAINISÜSTEEM ====== */
+
+#galaktikaBlokkAironX {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(160deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    border-top: 5px solid #00ffe7;
+    overflow: hidden;
+    position: relative;
+}
+
+.pealkiriNeoAironX {
+    font-size: 36px;
+    letter-spacing: 2px;
+    animation: ilmumineSpekterAironX 2s ease-in-out;
+}
+
+.sloganVibeAironX {
+    font-style: italic;
+    color: #00ffe7;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.tutvustusTekstAironX {
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.linkNuppHyperAironX {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    background: #00ffe7;
+    color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.linkNuppHyperAironX:hover {
+    background: #ffffff;
+    transform: scale(1.1) rotate(-2deg);
+}
+
+.interaktiivneEnergiaAironX {
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.interaktiivneEnergiaAironX:hover {
+    background: #00ffe7;
+    transform: scale(1.1);
+}
+
+/* Animatsioon */
+@keyframes ilmumineSpekterAironX {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Täheefekt */
+.taeheSaduAironX {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: kukkumineAironX linear infinite;
+}
+
+@keyframes kukkumineAironX {
+    from { transform: translateY(-10px); }
+    to { transform: translateY(800px); }
+}
+        /*AIRON*/
 
     </style>
 </head>
@@ -338,6 +423,76 @@
 ">
     ⚡ TARPE24 ⚡ MARTTEN ⚡ AI STYLE ⚡ LEGEND MODE ⚡
 </marquee>
+
+<!-- ===== AIRONI UNIKAALNE OSA ===== -->
+<section id="galaktikaBlokkAironX">
+    <h2 class="pealkiriNeoAironX">🚀 Tere tulemast Aironi loovuniversumisse</h2>
+
+    <p class="sloganVibeAironX">
+        "Kood on minu supervõime. AI Disain on minu allkiri."
+    </p>
+
+    <p class="tutvustusTekstAironX">
+        Panen Ai tööle nagu 19. sajandi musta mehe #Belief
+    </p>
+
+    <a href="minuleht.html" class="linkNuppHyperAironX">
+        Ava mu Ainemapp
+    </a>
+
+    <br>
+
+    <button onclick="AironAktiveeriKosmilineReziimX()" class="interaktiivneEnergiaAironX">
+        Aktiveeri kosmiline režiim
+    </button>
+</section>
+<!-- ===== AIRONI OSA LÕPP ===== -->
+
+
+<script>
+
+/* ===== AIRONI FUNKTSIOONISÜSTEEM ===== */
+
+function AironAktiveeriKosmilineReziimX() {
+
+    const sektsioon = document.getElementById("galaktikaBlokkAironX");
+
+    const varvid = [
+        "linear-gradient(160deg, #141E30, #243B55)",
+        "linear-gradient(160deg, #000428, #004e92)",
+        "linear-gradient(160deg, #42275a, #734b6d)",
+        "linear-gradient(160deg, #1f4037, #99f2c8)"
+    ];
+
+    const juhuslikValik = varvid[Math.floor(Math.random() * varvid.length)];
+
+    sektsioon.style.background = juhuslikValik;
+
+    AironLooTaeheSaduX();
+}
+
+
+function AironLooTaeheSaduX() {
+
+    const ala = document.getElementById("galaktikaBlokkAironX");
+
+    for (let i = 0; i < 25; i++) {
+
+        const taeht = document.createElement("div");
+        taeht.className = "taeheSaduAironX";
+
+        taeht.style.left = Math.random() * window.innerWidth + "px";
+        taeht.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
+        ala.appendChild(taeht);
+
+        setTimeout(() => {
+            taeht.remove();
+        }, 5000);
+    }
+}
+
+</script>
 
 </div>
 </body>
