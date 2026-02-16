@@ -1,0 +1,33 @@
+div.cow {
+    background-color:limegreen;
+    border-radius: 30px;
+    padding: 15px;
+    width: 30%;
+    font-family: 'Segoe Script MT Bold, cursive';
+    background-image: url('./flowergrass.png');
+    background-size: 140%;
+    background-position-y: 30%;
+    border: 2pt solid black;
+
+}
+
+a.cowLink {
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 5px;
+    font-weight: bold;
+    border: 2pt solid limegreen;
+
+    background-color: limegreen;
+}
+
+a.cowLink:hover {
+    border: 2pt solid black;
+}
+
+div.cow > div.flex {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    justify-content: space-between;
+}
