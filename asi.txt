@@ -1,3 +1,33 @@
+
+hello world - Saimon
+
 hello
+<<<<<<< HEAD
 
 world (allan)
+=======
+
+world (Savva)
+world (siim)
+work(George ei jahahahah)
+
+world(juhan)
+
+
+world (kaur)
+
+world (Kivisild)
+JAMAICA (Ervin)
+world(airon)
+
+world (siim)
+world (enrique)
+
+helloworld("print");
+
+
+
+
+world (rasmus)
+
+>>>>>>> 242cb3ba0cdf6361e1e603e1dc223d56d69daa8e
