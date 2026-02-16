@@ -2,3 +2,21 @@ hello
 
 world (Savva)
 world (siim)
+work(George ei jahahahah)
+
+world(juhan)
+
+
+world (kaur)
+
+world (Kivisild)
+JAMAICA (Ervin)
+world(airon)
+
+world (siim)
+world (enrique)
+
+helloworld("print");
+
+
+world (rasmus)
