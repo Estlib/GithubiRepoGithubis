@@ -1,0 +1,73 @@
+/* General Page Styling */
+body {
+    background-color: #f3f2f1; /* Microsoft's light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #323130;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px;
+}
+
+/* Main Container */
+.project-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-top: 10px solid #31752f; /* The Project Green color */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Header */
+.project-header {
+    background-color: #f8f8f8;
+    padding: 20px 30px;
+    border-bottom: 1px solid #edebe9;
+}
+
+.project-header h3 {
+    margin: 0;
+    color: #31752f;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Content Area */
+.project-content {
+    padding: 30px;
+}
+
+.ms-logo {
+    display: block;
+    max-width: 150px;
+    margin: 15px 0;
+}
+
+/* Image Handling */
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 15px;
+    background: #f3f2f1;
+    border-radius: 8px;
+}
+
+.image-gallery img {
+    border: 2px solid #31752f;
+    border-radius: 4px;
+    max-height: 150px;
+    transition: transform 0.2s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Matching ID styling (from your HTML) */
+#KaurP24B {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
