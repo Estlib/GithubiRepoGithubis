@@ -93,7 +93,6 @@ img {
     display: block;
     max-width: 100%;
     border: 2px solid #7f858c;
-    filter: grayscale(100%) contrast(110%);
 }
 
 /* NUPP */
