@@ -393,6 +393,44 @@
   // Create one immediately on load
   window.onload = createPopup;
 </script>
+    <script>
+  let score = 0;
+
+  function closeAd(element) {
+    // Increase score
+    score++;
+    document.getElementById('score-number').innerText = score;
+    
+    // Remove the ad window
+    element.parentElement.parentElement.remove();
+  }
+
+  function createPopup() {
+    const ad = document.createElement('div');
+    ad.className = 'popup-ad';
+    
+    // Random position
+    ad.style.top = Math.random() * 70 + 10 + "%";
+    ad.style.left = Math.random() * 70 + 10 + "%";
+
+    ad.innerHTML = `
+      <div class="ad-header" style="background: navy; color: white; padding: 2px 5px; display: flex; justify-content: space-between;">
+        <span>!!! ERIPAKKUMINE !!!</span>
+        <span class="close-btn" onclick="closeAd(this)" style="cursor: pointer; background: #ccc; color: black; padding: 0 4px; border: 1px solid black;">X</span>
+      </div>
+      <div class="ad-content" style="padding: 5px; background: #ccc;">
+        <img src="kalapulk1.png" style="width: 100%;">
+        <p style="text-align:center; font-weight:bold; margin: 5px 0;">OSTA KOHE!</p>
+      </div>
+    `;
+
+    document.body.appendChild(ad);
+  }
+
+  // Spawn every 3 seconds
+  setInterval(createPopup, 3000);
+  window.onload = createPopup;
+</script>
     <link rel="stylesheet" href="./ervinstyle.css">
 </head>
     <img src="kalapulk1.png" class="falling-item" style="left: 10%; animation-delay: 0s;">
@@ -401,6 +439,21 @@
 <img src="kalapulk1.png" class="falling-item" style="left: 90%; animation-delay: 3s; width: 40px;">
 
 <body style="background-image: url('cowkalapulk.png'); background-size: 50%; background-repeat:repeat; background-attachment: fixed;">
+    <div id="score-container" style="
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    background: rgba(0, 0, 0, 0.8); 
+    color: #0f0; 
+    padding: 10px 20px; 
+    font-family: 'Courier New', monospace; 
+    font-size: 24px; 
+    border: 2px solid #0f0; 
+    z-index: 1000;
+    border-radius: 5px;
+">
+    Ads Closed: <span id="score-number">0</span>
+</div>
    <div style="
     background-image: url('kalapulk1.png'); 
     background-size: contain; 
