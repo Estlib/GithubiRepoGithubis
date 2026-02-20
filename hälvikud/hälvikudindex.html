@@ -286,7 +286,151 @@
     </section>
 
     <section class="enrique">
-        
+    
+        <style>
+            .enrique {
+                background-color: #ffffff;
+                padding: 60px 40px;
+                max-width: 800px;
+                margin: 60px auto;
+                border-radius: 14px;
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: left;
+            }
+            
+            .enrique h2 {
+                font-size: 36px;
+                margin-bottom: 10px;
+                color: #ff6b2c;
+                font-weight: 700;
+                text-align: center;
+            }
+            .enrique h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #ff6b2c;
+                font-weight: 700;
+                
+            }
+
+
+            .enrique .logo {
+                display: block;
+                margin: 0 auto 25px auto;
+            }
+
+
+            .enrique > p {
+                text-align: left;
+            }
+    
+            .enrique .btn {
+                display: inline-block;
+                padding: 12px 26px;
+                background-color: #ff6b2c;
+                color: #ffffff;
+                text-decoration: none;
+                border-radius: 8px;
+                font-weight: 500;
+                transition: all 0.25s ease;
+            }
+    
+            .enrique .btn:hover {
+                background-color: #e4571f;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba(255, 107, 44, 0.2);
+            }
+            .enrique .features {
+                display: flex;
+                gap: 20px;
+                margin-bottom: 40px;
+                flex-wrap: wrap;
+            }
+
+.enrique .feature-card {
+    flex: 1 1 220px;
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1;
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+.enrique .feature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #ff6b2c;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.enrique .feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+}
+
+.enrique .feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #222;
+    font-weight: 600;
+}
+
+.enrique .feature-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+        </style>
+    
+    <h2>RustRover - Enrique</h2>
+
+    <img src="https://mosaic.ee/wp-content/uploads/2024/08/RustRover-icon.png" 
+         alt="rustrover icon" 
+         height="50"
+         class="logo">
+        <h3>Tutvustus</h3> <br>
+        <p>
+            RustRover on JetBrainsi loodud spetsiaalne IDE Rust programmeerimiskeele jaoks.
+            See pakub sügavat integratsiooni Rusti tööriistahelaga, sealhulgas Cargo, rustfmt ja Clippy tuge.
+            IDE sisaldab nutikat kooditäitmist, refaktoreerimistööriistu, sisseehitatud debuggerit ning
+            profiilimistööriistu jõudluse analüüsimiseks. Ametlik väljalase toimus 21. mail 2024.
+        </p> <br>
+        <h3>Omadused</h3> <br>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Koodi kiirem kirjutamine</h3>
+            <p>Kontekstipõhisest koodi lõpuleviimisest ja genereerimisest, <br>
+                reaalajas analüüsist ja kiirparandustest, <br>
+                nutikatest refaktoritest, reaalajas mallidest ja muust.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Jooksuta, silu ja testi oma koodi</h3>
+                <p>
+                    Käivita üksikuid teste, <br>
+                    testmooduleid või kõiki projekti teste ja <br>
+                    vali erinevaid käivituse eesmärke. 
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>Halda projekte</h3>
+                <p>
+                    Redigeeri TOML-faile koodianalüüsi ja <br>
+                    Cargo täieliku integratsiooni abil. <br>
+                    Samuti saad hallata kogu tööruumi ja <br>
+                    käivitada Cargo käske spetsiaalsest tööriistaaknast.
+                </p>
+            </div>
+        </div>
+    
+        <a href="https://www.jetbrains.com/rust/" class="btn">Loe rohkem</a>
+    
     </section>
     <section class="ervin">
 
