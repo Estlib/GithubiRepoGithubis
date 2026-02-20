@@ -6,6 +6,190 @@
     <title>Juviniil perjood CASE vahendid</title>
 </head>
 <body>
-    
+    <style>
+        /* =====================================
+           STENNU WEBSTORM DARK LAYOUT
+           Scoped ainult #case-stennu
+        ===================================== */
+        
+        #case-stennu {
+            background: #000;
+            padding: 50px 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* SUUR MUST KAST */
+        #case-stennu .main-box {
+            max-width: 950px;
+            margin: auto;
+            background: #111;
+            color: #e5e5e5;
+            padding: 25px;
+            border-radius: 14px;
+            border: 1px solid #222;
+            box-shadow: 0 0 25px rgba(0,0,0,0.8);
+        }
+        
+        /* HEADER */
+        #case-stennu .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        /* LOGO VASAKUL */
+        #case-stennu .logo {
+            width: 55px;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        /* PEALKIRJAD */
+        #case-stennu h2 {
+            margin: 0;
+            color: #4da3ff;
+        }
+        
+        #case-stennu h3 {
+            margin-top: 0;
+            color: #7cc4ff;
+        }
+        
+        /* VÄIKESED KASTID */
+        #case-stennu .card {
+            background: #181818;
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid #2a2a2a;
+            margin-top: 15px;
+        }
+        
+        /* FUNKTSIOONID GRID */
+        #case-stennu .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+        }
+        
+        #case-stennu .feature {
+            background: #202020;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            transition: 0.2s;
+        }
+        
+        #case-stennu .feature:hover {
+            transform: translateY(-3px);
+            border-color: #4da3ff;
+        }
+        
+        /* PILDID */
+        #case-stennu img.feature-img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 8px;
+        }
+        
+        #case-stennu p {
+            line-height: 1.6;
+            color: #d4d4d4;
+        }
+        
+        #case-stennu .note {
+            margin-top: 15px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        </style>
+        </head>
+        
+        <body>
+        
+            <section id="case-stennu">
+
+                <div class="main-box">
+                
+                    <!-- HEADER -->
+                    <div class="header">
+                        <img src="sticker_webstorm.png" class="logo" alt="WebStorm logo">
+                
+                        <div>
+                            <h2>WebStorm – CASE vahend</h2>
+                            <p>JetBrainsi professionaalne veebiarenduse IDE</p>
+                        </div>
+                    </div>
+                
+                    <!-- PROGRAMMI NIMI -->
+                    <div class="card">
+                        <h3>Programmi nimi</h3>
+                        <p><strong>WebStorm</strong> (JetBrains)</p>
+                    </div>
+                
+                    <!-- AJALUGU -->
+                    <div class="card">
+                        <h3>Ajalugu</h3>
+                        <p>
+                            WebStorm on CASE-tüüpi arenduskeskkond, mille arendas tarkvarafirma
+                            <strong>JetBrains</strong>. Esimene versioon avaldati 2010. aastal.
+                        </p>
+                        <p>
+                            Tööriist loodi eesmärgiga muuta JavaScripti ja veebiarendus kiiremaks
+                            läbi intelligentse koodianalüüsi, automaatsete soovituste ja
+                            arendustööriistade integratsiooni. Arendust jätkatakse aktiivselt
+                            ka tänapäeval.
+                        </p>
+                    </div>
+                    <!--Programmi arendus-->
+                    <div class="card">
+                        <h3>Arendus</h3>
+                        <p>
+                            Programmi arendus ei ole lõppenud — JetBrains arendab WebStormi aktiivselt 
+                           edasi ka tänapäeval, lisades uusi funktsioone, parandades jõudlust ning toetades uusi JavaScript.
+                           raamistikke ja arendustööriistu. Tänapäeval kasutatakse WebStormi nii õppimisel kui ka professionaalsetes 
+                           tarkvaraarendusprojektides üle maailma.
+                        </p>
+                    </div>
+                
+                    <!-- FUNKTSIOONID -->
+                    <div class="card">
+                        <h3>Peamised funktsioonid</h3>
+                
+                        <div class="features">
+                
+                            <div class="feature">
+                                <h4>Smart Code Completion</h4>
+                                <p>Automaatne koodisoovitus ja vigade tuvastamine.</p>
+                                <img src="izext.png" class="feature-img">
+                            </div>
+                
+                            <div class="feature">
+                                <h4>Debugging</h4>
+                                <p>Sisseehitatud debugger programmeerimisvigade leidmiseks.</p>
+                                <img src="blog_post_debugging_debug_tool_window_active.webp" class="feature-img">
+                            </div>
+                
+                            <div class="feature">
+                                <h4>Git integratsioon</h4>
+                                <p>Commit ja branchide haldus otse IDE sees.</p>
+                                <img src="ws_Git_log_tab_legend.png" class="feature-img">
+                            </div>
+                
+                            <div class="feature">
+                                <h4>Framework tugi</h4>
+                                <p>React, Vue, Angular ja Node.js automaatne tugi.</p>
+                                <img src="images.jpg" class="feature-img">
+                            </div>
+                
+                        </div>
+                    </div>
+                
+                    <p class="note">
+                        
+                    </p>
+                
+                </div>
+                </section>
 </body>
 </html>
