@@ -1,0 +1,14 @@
+section.ervin {
+    width: 100%;
+}
+
+section.ervin > div.main {
+    background-color: black;
+    color: white;
+    /* margin-left: 10px; */
+    padding: 15px;
+    font-family: "Roboto";
+}
+.example {
+    width: 50%;
+}
