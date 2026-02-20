@@ -818,5 +818,195 @@
 
 
 <!-- Enrique -->
+
+<style>
+    .ArturV-Portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    }
+
+    .ArturV-window.ArturV-hl {
+    position: relative;
+    width: 560px;
+    max-width: 95%;
+    padding: 28px 28px 26px;
+    text-align: left;
+
+    background: #0b0d0e;
+    border: 2px solid #2a2f31;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.55);
+
+    color: #cfd6d6;
+    overflow: hidden;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    .ArturV-window.ArturV-hl::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 3px;
+    width: 100%;
+    background: #ff8a1f;
+    opacity: 0.9;
+    }
+
+
+    .ArturV-window.ArturV-hl::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.10;
+    mix-blend-mode: overlay;
+
+    background:
+        repeating-linear-gradient(0deg,
+        rgba(255,255,255,0.03) 0px,
+        rgba(255,255,255,0.03) 1px,
+        rgba(0,0,0,0.03) 2px,
+        rgba(0,0,0,0.03) 3px),
+        repeating-linear-gradient(90deg,
+        rgba(255,255,255,0.02) 0px,
+        rgba(255,255,255,0.02) 1px,
+        rgba(0,0,0,0.02) 2px,
+        rgba(0,0,0,0.02) 3px);
+    }
+
+    .ArturV-hl-header {
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #202527;
+    }
+
+    .ArturV-window-title {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    color: #ff8a1f;
+    text-transform: uppercase;
+    }
+
+    .ArturV-hl-subtitle {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #9aa4a6;
+    text-transform: uppercase;
+    }
+
+    .ArturV-window-description {
+    background: rgba(255, 138, 31, 0.06);
+    border: 1px solid rgba(255, 138, 31, 0.25);
+    padding: 14px 14px;
+    margin-bottom: 18px;
+    color: #cfd6d6;
+    line-height: 1.45;
+    }
+
+    .ArturV-window-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    }
+
+    .ArturV-window-button.ArturV-hl-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 14px;
+    min-width: 180px;
+    text-align: center;
+
+    color: #0b0d0e;
+    background: #ff8a1f;
+    border: 1px solid #c56a16;
+    box-shadow: 0 4px 0 rgba(0,0,0,0.35);
+
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+
+    transition: transform 0.12s ease, filter 0.12s ease;
+    }
+
+    .ArturV-window-button.ArturV-hl-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+    }
+
+    .ArturV-window-button.ArturV-hl-btn:active {
+    transform: translateY(2px);
+    filter: brightness(0.95);
+    }
+
+    .ArturV-hl-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -28px -28px 20px -28px;
+    padding: 8px 14px;
+
+    background: #14181a;
+    border-bottom: 1px solid #202527;
+    }
+
+    .ArturV-hl-topbar-title {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #8f9a9c;
+    text-transform: uppercase;
+    }
+
+    .ArturV-hl-close-btn {
+    background: transparent;
+    border: 1px solid #2a2f31;
+    color: #ff8a1f;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 3px 8px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .ArturV-hl-close-btn:hover {
+    background: #ff8a1f;
+    color: #0b0d0e;
+    }
+
+    .ArturV-hl-close-btn:active {
+    transform: translateY(1px);
+    }
+</style>
+
+<section class="ArturV-Portfolio">
+  <div class="ArturV-window ArturV-hl">
+
+    <div class="ArturV-hl-topbar">
+      <span class="ArturV-hl-topbar-title">KONSOOL</span>
+      <button class="ArturV-hl-close-btn">X</button>
+    </div>
+
+    <div class="ArturV-hl-header">
+      <h2 class="ArturV-window-title">Artur Vartsaba (TARpe24) - Ainemapp</h2>
+      <div class="ArturV-hl-subtitle">TTHK AVALIK / ARHIIV</div>
+    </div>
+
+    <div class="ArturV-window-description">
+      <p>
+        Tegelen programmeerimisega. <br/>
+        Loon koodi, mis "Võib olla" töötab.
+      </p>
+    </div>
+
+    <div class="ArturV-window-buttons">
+      <a href="https://arturvartsaba.github.io/TarkvaraArendusprotsessTARpe24ArturVartsaba/" class="ArturV-window-button ArturV-hl-btn">Vaata minu ainemappi</a>
+      <a href="http://127.0.0.1:5501/RasmusSaimonArtur.html" class="ArturV-window-button ArturV-hl-btn">Vaata meeskonna lehe</a>
+    </div>
+
+  </div>
+</section>
+
 </body>
 </html>
