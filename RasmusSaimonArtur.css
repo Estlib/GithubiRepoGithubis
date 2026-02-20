@@ -85,3 +85,37 @@
     border-radius: 8px;
     margin-top: 10px;
 }
+#sinu-osa {
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 900px;
+    background-color: #111;
+    border-radius: 15px;
+}
+
+#sinu-osa .wrapper {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#sinu-osa h1 {
+    color: #00d8ff;
+    font-size: 40px;
+}
+
+#sinu-osa h2 {
+    margin-top: 30px;
+    color: #00bcd4;
+}
+
+#sinu-osa .logo {
+    width: 180px;
+    margin: 20px 0;
+}
+
+#sinu-osa .screenshot {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
