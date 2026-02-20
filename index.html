@@ -299,8 +299,36 @@
             opacity: 0.85;
         }
     </style>
+    <style>
+    /* 1. Define the movement */
+    @keyframes fall {
+      0% {
+        transform: translateY(-100vh) rotate(0deg); /* Start above screen */
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg); /* End below screen */
+        opacity: 0.3; /* Fade out as it hits the bottom */
+      }
+    }
+  
+    /* 2. Style the falling items */
+    .falling-item {
+      position: fixed;
+      top: -10%;
+      z-index: -1; /* Keeps them behind your text */
+      width: 50px; /* Size of the falling image */
+      user-select: none;
+      pointer-events: none;
+      animation: fall 5s linear infinite;
+    }
+  </style>
     <link rel="stylesheet" href="./ervinstyle.css">
 </head>
+    <img src="kalapulk1.png" class="falling-item" style="left: 10%; animation-delay: 0s;">
+<img src="kalapulk1.png" class="falling-item" style="left: 30%; animation-delay: 2s; width: 70px;">
+<img src="kalapulk1.png" class="falling-item" style="left: 70%; animation-delay: 1s; animation-duration: 7s;">
+<img src="kalapulk1.png" class="falling-item" style="left: 90%; animation-delay: 3s; width: 40px;">
 
 <body style="background-image: url('kalapulk.png'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;">
    <div style="
