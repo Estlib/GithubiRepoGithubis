@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #bfc3c7; /* hall taevas */
+    font-family: "Tahoma", "Arial Narrow", sans-serif;
+    color: #1c1c1c;
+}
+
+/* külm betoon tekstuur vibe */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: 
+        linear-gradient(rgba(255,255,255,0.03), rgba(0,0,0,0.05)),
+        repeating-linear-gradient(
+            0deg,
+            rgba(0,0,0,0.02) 0px,
+            rgba(0,0,0,0.02) 1px,
+            transparent 1px,
+            transparent 3px
+        );
+    pointer-events: none;
+}
+
+/* SEKTOR */
+#George_Casevahend {
+    padding: 80px 20px;
+}
+
+/* HOONE BLOKK */
+.tap-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #d6d9dd; /* betoonpaneel */
+    border: 3px solid #8c9197;
+    box-shadow: 
+        8px 8px 0 #9da3aa,
+        16px 16px 0 #7f858c;
+    padding: 40px;
+}
+
+/* SILD */
+.tap-badge {
+    display: inline-block;
+    background: #8c9197;
+    color: #2a2a2a;
+    padding: 6px 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #6f747a;
+}
+
+/* PEALKIRI */
+.tap-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 25px 0;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* SLOGAN */
+.tap-slogan {
+    margin: 20px 0;
+    padding-left: 15px;
+    border-left: 6px solid #7a8087;
+    color: #3c3f44;
+}
+
+/* TEKST */
+.tap-desc {
+    margin-top: 30px;
+    line-height: 1.7;
+    font-size: 15px;
+    color: #2f3236;
+}
+
+/* ALA-PEALKIRJAD */
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    border-bottom: 2px solid #7a8087;
+    padding-bottom: 5px;
+    color: #3a3d42;
+}
+
+/* PILDID */
+img {
+    margin: 15px 0;
+    display: block;
+    max-width: 100%;
+    border: 2px solid #7f858c;
+}
+
+/* NUPP */
+.tap-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 20px;
+    background: #7f858c;
+    color: #1a1a1a;
+    text-decoration: none;
+    border: 2px solid #6f747a;
+    transition: 0.2s ease;
+}
+
+.tap-btn:hover {
+    background: #6f747a;
+    color: #000;
+}
+
+/* VEIDI EBAMUGAV JOONDUS */
+.tap-grid > div {
+    transform: translateX(6px);
+}

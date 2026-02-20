@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hälvikute lemmikud CASE vahendid</title>
+    <style>
+
+        /* =========================
+           SAVVA SECTION STYLE
+           ========================= */
+        
+        .savva {
+            display: flex;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+        
+        .savva > div {
+            max-width: 900px;
+            width: 100%;
+            background: linear-gradient(
+                135deg,
+                #ffffff 0%,
+                #fff2f2 60%,
+                #ffe5e5 100%
+            );
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 15px 40px rgba(196, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .savva > div:hover {
+            transform: translateY(-6px);
+        }
+        
+        .savva h3 {
+    text-align: center;
+    color: #c40000;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.savva h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #c40000;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+        
+        .savva div {
+            color: #444;
+            line-height: 1.7;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+        
+        /* PILDID ÜHESUGUSEKS */
+        
+        .savva img {
+            width: 280px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 14px;
+            margin: 15px;
+            box-shadow: 0 10px 25px rgba(196, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .savva img:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 600px) {
+            .savva img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+        
+        </style>
+    
+</head>
+<body>
+    
+    <section class="juhan" id="trello-section">
+
+        <style>
+            #trello-section {
+              font-family: 'Inter', 'Segoe UI', sans-serif;
+              background: #f4f5f7;
+              padding: 80px 20px;
+              max-width: 1200px;
+              margin: 60px auto;
+              border-radius: 24px;
+              box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+              position: relative;
+              overflow: hidden;
+            }
+        
+            /* Dekoratiivne "sticky tape" efekt */
+            #trello-section::before {
+              content: "";
+              position: absolute;
+              top: -15px;
+              left: 50%;
+              transform: translateX(-50%) rotate(-2deg);
+              width: 180px;
+              height: 40px;
+              background: rgba(255,255,255,0.7);
+              box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+              border-radius: 6px;
+            }
+        
+            #trello-section h1 {
+              text-align: center;
+              font-size: 48px;
+              margin-bottom: 10px;
+              color: #172b4d;
+              letter-spacing: -1px;
+            }
+        
+            #trello-section .logo {
+              display: flex;
+              justify-content: center;
+              margin-bottom: 40px;
+            }
+        
+            #trello-section .logo img {
+              width: 120px;
+              filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+              transition: transform 0.4s ease;
+            }
+        
+            #trello-section .logo img:hover {
+              transform: rotate(-5deg) scale(1.08);
+            }
+        
+            #trello-section .content {
+              max-width: 900px;
+              margin: auto;
+              color: #344563;
+              line-height: 1.8;
+              font-size: 18px;
+            }
+        
+            #trello-section h2 {
+              margin-top: 60px;
+              font-size: 28px;
+              color: #091e42;
+              position: relative;
+              display: inline-block;
+            }
+        
+            #trello-section h2::after {
+              content: "";
+              display: block;
+              width: 60%;
+              height: 6px;
+              background: #0079bf;
+              margin-top: 6px;
+              border-radius: 3px;
+            }
+        
+            #trello-section .features {
+              display: flex;
+              gap: 30px;
+              margin-top: 40px;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+        
+            #trello-section .feature-card {
+              background: white;
+              width: 320px;
+              padding: 20px;
+              border-radius: 16px;
+              box-shadow: 0 15px 35px rgba(9,30,66,0.12);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              position: relative;
+            }
+        
+            #trello-section .feature-card:hover {
+              transform: translateY(-10px);
+              box-shadow: 0 25px 45px rgba(9,30,66,0.18);
+            }
+        
+            #trello-section .feature-card img {
+              width: 100%;
+              border-radius: 12px;
+              margin-bottom: 15px;
+            }
+        
+            #trello-section .feature-card h3 {
+              margin-bottom: 10px;
+              color: #172b4d;
+            }
+        
+            #trello-section .feature-card p {
+              font-size: 15px;
+              color: #5e6c84;
+            }
+        
+            /* Väike "label" efekt kaardil */
+            #trello-section .feature-card::before {
+              content: "FEATURE";
+              position: absolute;
+              top: -12px;
+              left: 20px;
+              background: #0079bf;
+              color: white;
+              font-size: 12px;
+              padding: 4px 10px;
+              border-radius: 20px;
+              letter-spacing: 1px;
+            }
+        
+            @media (max-width: 768px) {
+              #trello-section .features {
+                flex-direction: column;
+                align-items: center;
+              }
+            }
+          </style>
+        
+          <h1>Trello - Juhan</h1>
+        
+          <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Trello_logo.svg" alt="Trello logo">
+          </div>
+        
+          <div class="content">
+            <h2>Ajaloost</h2>
+            <p>
+              Trello on projektihalduse tööriist, mille arendamist alustas 2010. aastal ettevõte Fog Creek Software.
+              Selle lõi Michael Pryor ja Joel Spolsky eesmärgiga pakkuda lihtsat ja visuaalset viisi projektide haldamiseks.
+              Avalikult lansseeriti Trello 2011. aastal TechCrunch Disrupt konverentsil.
+              2017. aastal ostis Trello ettevõtte Atlassian ning arendus jätkub aktiivselt tänapäevani.
+            </p>
+        
+            <h2>Peamised funktsioonid</h2>
+        
+            <div class="features">
+              <div class="feature-card">
+                <img src="https://miro.medium.com/max/1400/1*Xn6iR3IhKQZx3K7YwYqK7Q.png" alt="Trello boards">
+                <h3>Tahvlid (Boards)</h3>
+                <p>
+                  Trello põhineb tahvlitel, mis aitavad organiseerida projekte ja töövooge visuaalsel kujul.
+                </p>
+              </div>
+        
+              <div class="feature-card">
+                <img src="https://miro.medium.com/max/1400/1*2m6F2Y5OnKwZq2UTWyxlLw.png" alt="Trello cards">
+                <h3>Kaardid (Cards)</h3>
+                <p>
+                  Kaardid esindavad ülesandeid. Neile saab lisada kirjeldusi, tähtaegu, faile ja kommentaare.
+                </p>
+              </div>
+        
+              <div class="feature-card">
+                <img src="https://miro.medium.com/max/1400/1*XzjS0M1mq9hw3rroWAtxEw.png" alt="Trello collaboration">
+                <h3>Koostöö</h3>
+                <p>
+                  Kasutajad saavad kutsuda meeskonnaliikmeid, määrata ülesandeid ja jälgida edenemist reaalajas.
+                </p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="savva">
+            <div>
+                <h3>Visual Studio Code</h3>
+                Visual Stuido Code on mugav koodiredaktor, mis toetab palju erinevaid keeli. VSCode võimaldab<br>
+                 luua projekti arhitektuuri, lähtekoodi kirjutada ja hallata, debagida ja kasutada laiendusi tasuta.<br>
+                 VSCode arendus algas aastal 2014 ja esimene stabiilne versioon ilmus 2016 aasta aprillis. VSCode loodi, kuna <br>
+                 Microsoft soovis luua kerge, kiire ja mitmel operatsioonisüsteemil töötava tööriista. VSCode-i arendas <br>
+                 peamiselt Microsofti arendustiim.  <br>
+                 <img src="data:image/png;base64,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" alt="vscode"></img>
+                 <img src="https://user-images.githubusercontent.com/35271042/118224532-3842c400-b438-11eb-923d-a5f66fa6785a.png" alt="vscode funktsioonid">
+            </div>
+    </section>
+
+    <section class="enrique">
+    
+        <style>
+            .enrique {
+                background-color: #ffffff;
+                padding: 60px 40px;
+                max-width: 800px;
+                margin: 60px auto;
+                border-radius: 14px;
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: left;
+            }
+            
+            .enrique h2 {
+                font-size: 36px;
+                margin-bottom: 10px;
+                color: #ff6b2c;
+                font-weight: 700;
+                text-align: center;
+            }
+            .enrique h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #ff6b2c;
+                font-weight: 700;
+                
+            }
+
+
+            .enrique .logo {
+                display: block;
+                margin: 0 auto 25px auto;
+            }
+
+
+            .enrique > p {
+                text-align: left;
+            }
+    
+            .enrique .btn {
+                display: inline-block;
+                padding: 12px 26px;
+                background-color: #ff6b2c;
+                color: #ffffff;
+                text-decoration: none;
+                border-radius: 8px;
+                font-weight: 500;
+                transition: all 0.25s ease;
+            }
+    
+            .enrique .btn:hover {
+                background-color: #e4571f;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba(255, 107, 44, 0.2);
+            }
+            .enrique .features {
+                display: flex;
+                gap: 20px;
+                margin-bottom: 40px;
+                flex-wrap: wrap;
+            }
+
+.enrique .feature-card {
+    flex: 1 1 220px;
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1;
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+.enrique .feature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #ff6b2c;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.enrique .feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+}
+
+.enrique .feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #222;
+    font-weight: 600;
+}
+
+.enrique .feature-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+        </style>
+    
+    <h2>RustRover - Enrique</h2>
+
+    <img src="https://mosaic.ee/wp-content/uploads/2024/08/RustRover-icon.png" 
+         alt="rustrover icon" 
+         height="50"
+         class="logo">
+        <h3>Tutvustus</h3> <br>
+        <p>
+            RustRover on JetBrainsi loodud spetsiaalne IDE Rust programmeerimiskeele jaoks.
+            See pakub sügavat integratsiooni Rusti tööriistahelaga, sealhulgas Cargo, rustfmt ja Clippy tuge.
+            IDE sisaldab nutikat kooditäitmist, refaktoreerimistööriistu, sisseehitatud debuggerit ning
+            profiilimistööriistu jõudluse analüüsimiseks. Ametlik väljalase toimus 21. mail 2024.
+        </p> <br>
+        <h3>Omadused</h3> <br>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Koodi kiirem kirjutamine</h3>
+            <p>Kontekstipõhisest koodi lõpuleviimisest ja genereerimisest, <br>
+                reaalajas analüüsist ja kiirparandustest, <br>
+                nutikatest refaktoritest, reaalajas mallidest ja muust.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Jooksuta, silu ja testi oma koodi</h3>
+                <p>
+                    Käivita üksikuid teste, <br>
+                    testmooduleid või kõiki projekti teste ja <br>
+                    vali erinevaid käivituse eesmärke. 
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>Halda projekte</h3>
+                <p>
+                    Redigeeri TOML-faile koodianalüüsi ja <br>
+                    Cargo täieliku integratsiooni abil. <br>
+                    Samuti saad hallata kogu tööruumi ja <br>
+                    käivitada Cargo käske spetsiaalsest tööriistaaknast.
+                </p>
+            </div>
+        </div>
+    
+        <a href="https://www.jetbrains.com/rust/" class="btn">Loe rohkem</a>
+    
+    </section>
+    <section class="ervin">
+        <link rel="stylesheet" href="hälvikud.css">
+
+        <div class="main">
+            <h1>Roblox Studio</h1>
+            <br>
+            <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Roblox_Studio_icon_2025.svg/960px-Roblox_Studio_icon_2025.svg.png"
+            alt="Roblox Studio Logo"
+            style="width:25%"
+            />
+            <br>
+            <div class="introduction">
+                <h2>Mis on Roblox Studio?</h2>
+                <p>
+                    <b>Roblox studio</b> on mängumootor, mida saab kasutada lihtsate mängude tegemiseks<br><br>
+                    See sisaldab endas:<br>
+                    <ul>
+                        <li>Koodiredaktor</li>
+                        <li>Objektide ehitamise/mudeleerimise aken</li>
+                        <li>Silur (VÄGA SITT)</li>
+                        <li>Animatsioonide redaktor</li>
+                        <li>Digitaalne heli töötlemine</li>
+                    </ul>
+                </p>
+                <br>
+                <h2>Kust see alguse sai?</h2>
+                <p>
+                    <b>Roblox Studio</b> väljastati 23. juuli, aasta 2012 Californias<br>
+                    Enne seda sai mänge luua ainult läbi <b>RobloxApp'i</b>
+                </p>
+                <br>
+                <h2>Kes tegi?</h2>
+                <p>
+                    <b>Roblox Studio</b> kaks peamist arendajat on <b>Erik Cassel</b> ja David Baszucki<br>
+                </p>
+                <br>
+                <h2>Programmeerimiskeel</h2>
+                <p>
+                    See IDE kasutab <b>Luau</b> Programmeerimiskeelt, mis on Lua programmeerimiskeele<br>
+                    eraldi "branch".
+                </p>
+                <br>
+                <h2>Uuendused</h2>
+                <p>
+                    Tarkvara uuendatakse väga tihti, kahjuks enamus aega see toob vigu juurde.<br>
+                    Umbes iga poole aasta tagant nad uuendavad süsteeme koos programmeerimiskeelega,<br>
+                    mille pärast vanad mängud ei hakka enam tööle.<br>
+                </p>
+                <p>
+                    Karantiini algusest (u 2020) hakkas <b>Roblox</b> muutma nende IDE kujundust.<br>
+                    Tänapäevaks on see väga modernne ja mõnes mõttes ebamugav. 
+                </p>
+                <br>
+                <h2>Koodiredaktor</h2>
+                <img class="example" src="./StudioImages/StudioCodeEditor.PNG">
+
+                <br>
+                <h2>Objektide ehitamise/mudeleerimise aken</h2>
+                <img class="example" src="./StudioImages/StudioObjectEditor.PNG">
+                <br>
+                <h2>Silur</h2>
+                <p>Pilt puudub</p>
+                <br>
+                <h2>Animatsioonide redaktor</h2>
+                <img class="example" src="./StudioImages/StudioAnimationEditor.PNG">
+                <br>
+                <h2>Digitaalne heli töötlemine</h2>
+                <img class="example" src="./StudioImages/StudioDSP.PNG">
+
+
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+</html>
