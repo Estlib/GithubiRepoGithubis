@@ -128,73 +128,72 @@
         Näide VSCode-i Terminalist, mis lubab kasutada käske Terminalist, Git-Bashist ja powershellist.<br>
         VSCode-i originaalne autor on Erich Gamma kuid praegu selle omanik on üldiselt Microsoft<br>
     </p>
-        <!-- PowerDesigner osa -->
-        <div class="sm-section">
-            <h1>Belõi Lemmik - PowerDesigner</h1>
-            <img src="./Images/powerdesigner.png" alt="PowerDesigner">
+ <!-- SM container -->
+<div class="sm-container">
 
-            <p>
-                PowerDesigneri algne arendus algas 1990 aasta alguses prantsuse ettevõtte SDP (Systeme et Donnees) poolt.
-                Selle eesmärkiks oli pakkuda professionaalset andmemudelite ja infosüsteemide tööriista modelleerimiseks.
-                Hiljem omandas seda ettevõte <strong>Sybase</strong>.
-                2010 aastal omandas <strong>Sybase</strong> ettevõte <strong>SAP</strong>, mille järel PowerDesigner sai
-                <strong>SAP</strong> ametlikuks modelleerimise ja arhitektuurivahendiks.
-                Seda arendatakse tänaseni, keskendudes ettevõtte arhitektuuri, andmehalduse ja äriprotsesside modelleerimise toetamisele.
-            </p>
-        </div>
+    <!-- PowerDesigner osa -->
+    <div class="sm-section">
+        <h1>Belõi Lemmik - PowerDesigner</h1>
+        <img src="./Images/powerdesigner.png" alt="PowerDesigner">
+        <p>
+            PowerDesigneri algne arendus algas 1990. aasta alguses prantsuse ettevõtte SDP (Systeme et Donnees) poolt.
+            Selle eesmärk oli pakkuda professionaalset andmemudelite ja infosüsteemide tööriista modelleerimiseks.
+            Hiljem omandas seda ettevõte <strong>Sybase</strong>.
+            2010. aastal omandas <strong>Sybase</strong> ettevõte <strong>SAP</strong>, mille järel PowerDesigner sai
+            <strong>SAP</strong> ametlikuks modelleerimise ja arhitektuurivahendiks.
+            Seda arendatakse tänaseni, keskendudes ettevõtte arhitektuuri, andmehalduse ja äriprotsesside modelleerimisele.
+        </p>
+    </div>
 
+    <div class="sm-section">
+        <h2>Andmemudelite loomine (CDM, LDM, PDM)</h2>
+        <ul>
+            <li>Kontseptuaalne (CDM) – ärilised objektid ja nende seosed</li>
+            <li>Loogiline (LDM) – detailsem struktuur</li>
+            <li>Füüsiline (PDM) – konkreetse andmebaasi tabelid ja indeksid</li>
+        </ul>
+        <p>Võimaldab modelleerida ER-diagramme (Entity-Relationship).</p>
+        <img src="./Images/ER-diagramm.png" alt="ER-diagramm">
+    </div>
 
+    <div class="sm-section">
+        <h2>SQL-koodi automaatne genereerimine</h2>
+        <ul>
+            <li>CREATE TABLE käsud</li>
+            <li>indeksid</li>
+            <li>võtmed (PK/FK)</li>
+            <li>triggerid</li>
+        </ul>
+        <p>
+            Toetab erinevaid andmebaase (Oracle, MS SQL Server, MySQL) ning võimaldab reverse engineering’i.
+        </p>
+        <img src="./Images/sql-generate.png" alt="SQL genereerimine">
+    </div>
 
+    <div class="sm-section">
+        <h2>Äriprotsesside modelleerimine (BPMN)</h2>
+        <ul>
+            <li>Kirjeldada töövooge</li>
+            <li>Modelleerida äriprotsesse</li>
+            <li>Analüüsida protsesside efektiivsust</li>
+        </ul>
+        <p>Sobib ettevõtte protsesside dokumenteerimiseks.</p>
+        <img src="./Images/BPMN.png" alt="BPMN diagramm">
+    </div>
 
-<div class="sm-section">
-    <h2>Andmemudelite loomine (CDM, LDM, PDM)</h2>
-    <ul>
-        <li>Kontseptuaalne (CDM) – ärilised objektid ja nende seosed</li>
-        <li>Loogiline (LDM) – detailsem struktuur</li>
-        <li>Füüsiline (PDM) – konkreetse andmebaasi tabelid ja indeksid</li>
-    </ul>
-    <p>Võimaldab modelleerida ER-diagramme (Entity-Relationship).</p>
-    <img src="./Images/ER-diagramm.png" alt="ER-diagramm">
-</div>
+    <div class="sm-section">
+        <h2>Ettevõtte arhitektuuri modelleerimine</h2>
+        <ul>
+            <li>äriprotsessid</li>
+            <li>rakendused</li>
+            <li>andmebaasid</li>
+            <li>tehnoloogiad</li>
+        </ul>
+        <p>Toetab mõjuanalüüsi – näitab, kuidas ühe komponendi muutmine mõjutab teisi.</p>
+        <img src="./Images/architecture.png" alt="Ettevõtte arhitektuur">
+    </div>
 
-<div class="sm-section">
-    <h2>SQL-koodi automaatne genereerimine</h2>
-    <ul>
-        <li>CREATE TABLE käsud</li>
-        <li>indeksid</li>
-        <li>võtmed (PK/FK)</li>
-        <li>triggerid</li>
-    </ul>
-    <p>
-        Toetab erinevaid andmebaase (Oracle, MS SQL Server, MySQL) ning võimaldab reverse engineering’i.
-    </p>
-    <img src="./Images/sql-generate.png" alt="SQL genereerimine">
-</div>
-
-<div class="sm-section">
-    <h2>Äriprotsesside modelleerimine (BPMN)</h2>
-    <ul>
-        <li>Kirjeldada töövooge</li>
-        <li>Modelleerida äriprotsesse</li>
-        <li>Analüüsida protsesside efektiivsust</li>
-    </ul>
-    <p>Sobib ettevõtte protsesside dokumenteerimiseks.</p>
-    <img src="./Images/BPMN.png" alt="BPMN diagramm">
-</div>
-
-<div class="sm-section">
-    <h2>Ettevõtte arhitektuuri modelleerimine</h2>
-    <ul>
-        <li>äriprotsessid</li>
-        <li>rakendused</li>
-        <li>andmebaasid</li>
-        <li>tehnoloogiad</li>
-    </ul>
-    <p>Toetab mõjuanalüüsi – näitab, kuidas ühe komponendi muutmine mõjutab teisi.</p>
-    <img src="./Images/architecture.png" alt="Ettevõtte arhitektuur">
-</div>
-
-</div>
+</div> <!-- sm-container lõpp -->
 
     <div class="project-container">
       <header class="project-header">
