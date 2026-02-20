@@ -1,145 +1,141 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="juhanstyle.css">
-<title>Konfliktoorium</title>
+    <title>Konfliktoorium</title>
 
-<style>
-/* ===== MINU CRAZY AINEMAPI BLOKK ===== */
-.saimon-wrapper {
-    display:flex;
-    justify-content:center;
-}
+    <style>
+        /* ===== MINU CRAZY AINEMAPI BLOKK ===== */
+        .saimon-wrapper {
+            display: flex;
+            justify-content: center;
+        }
 
-/* glow kaart */
-.saimon-card {
-    margin:50px 0;
-    padding:30px;
-    max-width:750px;
-    border-radius:20px;
-    font-family:sans-serif;
-    color:white;
-    position:relative;
-    overflow:hidden;
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    box-shadow:0 0 25px rgba(0,200,255,.5);
-    transition:.3s;
-}
+        /* glow kaart */
+        .saimon-card {
+            margin: 50px 0;
+            padding: 30px;
+            max-width: 750px;
+            border-radius: 20px;
+            font-family: sans-serif;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            box-shadow: 0 0 25px rgba(0, 200, 255, .5);
+            transition: .3s;
+        }
 
-/* neon glow hover */
-.saimon-card:hover {
-    transform:scale(1.03);
-    box-shadow:
-        0 0 20px #00f0ff,
-        0 0 40px #00f0ff,
-        0 0 60px #00f0ff;
-}
+        /* neon glow hover */
+        .saimon-card:hover {
+            transform: scale(1.03);
+            box-shadow:
+                0 0 20px #00f0ff,
+                0 0 40px #00f0ff,
+                0 0 60px #00f0ff;
+        }
 
-/* moving gradient overlay */
-.saimon-card::before {
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,.25),
-        transparent
-    );
-    animation:saimonShine 4s linear infinite;
-}
+        /* moving gradient overlay */
+        .saimon-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(120deg,
+                    transparent,
+                    rgba(255, 255, 255, .25),
+                    transparent);
+            animation: saimonShine 4s linear infinite;
+        }
 
-@keyframes saimonShine {
-    0% {transform:translateX(-100%);}
-    100% {transform:translateX(100%);}
-}
+        @keyframes saimonShine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
 
-.saimon-title {
-    margin-top:0;
-    font-size:2em;
-}
+        .saimon-title {
+            margin-top: 0;
+            font-size: 2em;
+        }
 
-.saimon-slogan {
-    font-weight:bold;
-    font-size:1.2em;
-    color:#00f0ff;
-}
+        .saimon-slogan {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #00f0ff;
+        }
 
-.saimon-btn {
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 20px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:bold;
-    color:white;
-    background:linear-gradient(45deg,#ff00cc,#3333ff);
-    transition:.3s;
-}
+        .saimon-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #ff00cc, #3333ff);
+            transition: .3s;
+        }
 
-.saimon-btn:hover {
-    letter-spacing:1px;
-    transform:scale(1.08);
-}
+        .saimon-btn:hover {
+            letter-spacing: 1px;
+            transform: scale(1.08);
+        }
 
-/* väike dünaamiline info */
-.saimon-dynamic {
-    margin-top:15px;
-    font-size:.9em;
-    opacity:.85;
-}
-</style>
+        /* väike dünaamiline info */
+        .saimon-dynamic {
+            margin-top: 15px;
+            font-size: .9em;
+            opacity: .85;
+        }
+    </style>
     <link rel="stylesheet" href="./Ge.css">
     <style>
         /* ========================
-           SAVVA AINEMAPP OSA
-           ======================== */
-        
+            SAVVA AINEMAPP OSA
+            ======================== */
+
         .savva-section {
             display: flex;
             justify-content: center;
             padding: 60px 20px;
         }
-        
+
         .savva-card {
             max-width: 600px;
             width: 100%;
-            background: linear-gradient(
-                135deg,
-                #ffffff 0%,
-                #fff1f1 60%,
-                #ffe5e5 100%
-            );
+            background: linear-gradient(135deg,
+                    #ffffff 0%,
+                    #fff1f1 60%,
+                    #ffe5e5 100%);
             border-radius: 20px;
             padding: 35px;
             text-align: center;
             box-shadow: 0 15px 35px rgba(196, 0, 0, 0.15);
             transition: transform 0.3s ease;
         }
-        
+
         .savva-card:hover {
             transform: translateY(-6px);
         }
-        
+
         .savva-heading {
             color: #c40000;
             margin-bottom: 10px;
         }
-        
+
         .savva-slogan {
             font-weight: 600;
             color: #a00000;
             margin-bottom: 15px;
         }
-        
+
         .savva-text {
             font-size: 0.95rem;
             margin-bottom: 25px;
             color: #444;
         }
-        
+
         .savva-link {
             display: inline-block;
             padding: 12px 22px;
@@ -149,17 +145,17 @@
             border-radius: 12px;
             transition: all 0.3s ease;
         }
-        
+
         .savva-link:hover {
             background: #a00000;
             transform: scale(1.05);
         }
-        </style>
+    </style>
     <link rel="stylesheet" href="kauricss.css">
     <style>
         /* Rasmus */
         .rasmus-wrapper {
-            margin-top: 30px;
+            margin: 30px auto;
             padding: 30px;
             max-width: 650px;
             border-radius: 18px;
@@ -184,7 +180,7 @@
             right: -50px;
             width: 200px;
             height: 200px;
-            background: radial-gradient(circle, rgba(243,244,244,0.15), transparent 70%);
+            background: radial-gradient(circle, rgba(243, 244, 244, 0.15), transparent 70%);
             border-radius: 50%;
         }
 
@@ -199,7 +195,7 @@
             letter-spacing: 1px;
             margin-bottom: 18px;
             text-transform: uppercase;
-            box-shadow: 0 5px 15px rgba(243,244,244,0.3);
+            box-shadow: 0 5px 15px rgba(243, 244, 244, 0.3);
         }
 
         .rasmus-title a {
@@ -226,10 +222,6 @@
             width: 100%;
         }
 
-        .rasmus-title a:hover {
-            color: #F3F4F4;
-        }
-
         .rasmus-description {
             margin-top: 18px;
             font-size: 16px;
@@ -246,166 +238,75 @@
             border-left: 3px solid #F3F4F4;
             padding-left: 12px;
         }
-        /* Rasmus */
+
         /* Siim */
         .siimAinemapp2026-container {
-    margin: 50px auto;
-    padding: 30px;
-    max-width: 650px;
-    border-radius: 18px;
-    background: linear-gradient(135deg, #141e30, #243b55);
-    color: #ffffff;
-    text-align: center;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+            margin: 50px auto;
+            padding: 30px;
+            max-width: 650px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: #ffffff;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-  .siimAinemapp2026-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
-  }
+        .siimAinemapp2026-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+        }
 
-  .siimAinemapp2026-title {
-    font-size: 28px;
-    margin-bottom: 12px;
-    letter-spacing: 1px;
-  }
+        .siimAinemapp2026-title {
+            font-size: 28px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
 
-  .siimAinemapp2026-slogan {
-    font-style: italic;
-    font-size: 18px;
-    margin-bottom: 18px;
-    opacity: 0.9;
-  }
+        .siimAinemapp2026-slogan {
+            font-style: italic;
+            font-size: 18px;
+            margin-bottom: 18px;
+            opacity: 0.9;
+        }
 
-  .siimAinemapp2026-description {
-    font-size: 16px;
-    margin-bottom: 25px;
-    line-height: 1.6;
-  }
+        .siimAinemapp2026-description {
+            font-size: 16px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
 
-  .siimAinemapp2026-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #00c9ff;
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: background 0.3s ease, transform 0.2s ease;
-  }
+        .siimAinemapp2026-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #00c9ff;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
 
-  .siimAinemapp2026-button:hover {
-    background-color: #92fe9d;
-    transform: scale(1.05);
-  }
+        .siimAinemapp2026-button:hover {
+            background-color: #92fe9d;
+            transform: scale(1.05);
+        }
 
-  .siimAinemapp2026-dynamic {
-    margin-top: 18px;
-    font-size: 14px;
-    opacity: 0.85;
-  }
-        /* Siim */
-        /* ====== AIRONI ERALDI DISAINISÜSTEEM ====== */
-
-#galaktikaBlokkAironX {
-    padding: 80px 20px;
-    text-align: center;
-    background: linear-gradient(160deg, #0f0c29, #302b63, #24243e);
-    color: #ffffff;
-    border-top: 5px solid #00ffe7;
-    overflow: hidden;
-    position: relative;
-}
-
-.pealkiriNeoAironX {
-    font-size: 36px;
-    letter-spacing: 2px;
-    animation: ilmumineSpekterAironX 2s ease-in-out;
-}
-
-.sloganVibeAironX {
-    font-style: italic;
-    color: #00ffe7;
-    margin: 15px 0;
-    font-size: 20px;
-}
-
-.tutvustusTekstAironX {
-    max-width: 650px;
-    margin: 0 auto 30px auto;
-    line-height: 1.6;
-}
-
-.linkNuppHyperAironX {
-    display: inline-block;
-    padding: 12px 25px;
-    margin: 10px;
-    background: #00ffe7;
-    color: #000;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: 0.4s;
-    font-weight: bold;
-}
-
-.linkNuppHyperAironX:hover {
-    background: #ffffff;
-    transform: scale(1.1) rotate(-2deg);
-}
-
-.interaktiivneEnergiaAironX {
-    padding: 12px 25px;
-    border-radius: 30px;
-    border: none;
-    background: #ffffff;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.4s;
-}
-
-.interaktiivneEnergiaAironX:hover {
-    background: #00ffe7;
-    transform: scale(1.1);
-}
-
-/* Animatsioon */
-@keyframes ilmumineSpekterAironX {
-    from { opacity: 0; transform: translateY(-30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Täheefekt */
-.taeheSaduAironX {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: white;
-    border-radius: 50%;
-    opacity: 0.8;
-    animation: kukkumineAironX linear infinite;
-}
-
-@keyframes kukkumineAironX {
-    from { transform: translateY(-10px); }
-    to { transform: translateY(800px); }
-}
-        /*AIRON*/
-
+        .siimAinemapp2026-dynamic {
+            margin-top: 18px;
+            font-size: 14px;
+            opacity: 0.85;
+        }
     </style>
     <link rel="stylesheet" href="./ervinstyle.css">
 </head>
 
 <body>
-<<<<<<< HEAD
     <h1>TARpe24:</h1>
-    
-    <p>Siin on Tarpe24 õpilaste ainemappide lehed:
-    </p>
-    
+    <p>Siin on Tarpe24 õpilaste ainemappide lehed:</p>
+
     <div id="kalapulk-container">
         <div class="side-image left-side"></div>
-    
         <div class="glass-card">
             <link rel="stylesheet" href="kalapulk.css">
             <h2 class="slogan">Kalapulk on parim</h2>
@@ -417,187 +318,85 @@
             <div class="dynamic-blob"></div>
             <a href="https://tigerfrog-01.github.io/TarkvaraArendusprotsessTARpe24KristopherZuravljov/" class="portfolio-btn">Vaata mu mappi</a>
         </div>
-    
         <div class="side-image right-side"></div>
     </div>
 
-    <!-- ===== MINU REKLAAM BLOKK ===== -->
-<div class="saimon-wrapper">
-<section class="saimon-card">
+    <div class="saimon-wrapper">
+        <section class="saimon-card">
+            <h2 class="saimon-title">🚀 Saimoni Ainemapp</h2>
+            <p class="saimon-slogan">Õpi nutikalt. Koodi julgelt. Ehita tulevikku.</p>
+            <p>Siit leiad minu tarkvaraarenduse materjalid, projektid ja eksperimendid. Leht areneb koos minu oskustega — check it out 👇</p>
+            <a class="saimon-btn" href="https://mrfrend01.github.io/TarkvaraArendusProtsessTARpe24_Saimon/">AVA AINEMAPP →</a>
+            <p id="saimonTime" class="saimon-dynamic"></p>
+        </section>
+    </div>
 
-<h2 class="saimon-title">🚀 Saimoni Ainemapp</h2>
-
-<p class="saimon-slogan">
-Õpi nutikalt. Koodi julgelt. Ehita tulevikku.
-</p>
-
-<p>
-Siit leiad minu tarkvaraarenduse materjalid,
-projektid ja eksperimendid. Leht areneb koos
-minu oskustega — check it out 👇
-</p>
-
-<a class="saimon-btn"
-href="https://mrfrend01.github.io/TarkvaraArendusProtsessTARpe24_Saimon/">
-AVA AINEMAPP →
-</a>
-
-<p id="saimonTime" class="saimon-dynamic"></p>
-
-</section>
     <section class="savva-section">
         <div class="savva-card">
             <h2 class="savva-heading">Savva Ainemapp</h2>
-    
-            <p class="savva-slogan">
-                Siin on minu tehtud tööd ja arendatud projektid.
-            </p>
-    
-            <p class="savva-text">
-                Minu ainemapist leiad õpitud ainete projektid ja tehtud tööd.
-            </p>
-    
-            <a href="https://savvas250.github.io/TarkvaraArendusprotsessTARpe24SavvaSmirnyagin/" class="savva-link">
-                Vaata minu ainemappi →
-            </a>
+            <p class="savva-slogan">Siin on minu tehtud tööd ja arendatud projektid.</p>
+            <p class="savva-text">Minu ainemapist leiad õpitud ainete projektid ja tehtud tööd.</p>
+            <a href="https://savvas250.github.io/TarkvaraArendusprotsessTARpe24SavvaSmirnyagin/" class="savva-link">Vaata minu ainemappi →</a>
         </div>
     </section>
-    <h3 id="KaurP24">Kauri Tutvustus</h3>
-    <p id="KaurP24">
-        Tere olen Kaur tulen Eestist ning õpin programmeerijana<br>
-        Minu ainemapp on <a id="KaurP24" href="https://nauter1.github.io/TaapTARpe24KaurPakaste/">Siin</a><br>
-        See näitab erinevaid asju millega tegelesin ajal kui õppisin.<br>
-    </p>
 
+    <div style="text-align: center; margin: 40px 0;">
+        <h3 class="KaurP24-title">Kauri Tutvustus</h3>
+        <p class="KaurP24-text">
+            Tere olen Kaur tulen Eestist ning õpin programmeerijana<br>
+            Minu ainemapp on <a href="https://nauter1.github.io/TaapTARpe24KaurPakaste/">Siin</a><br>
+            See näitab erinevaid asju millega tegelesin ajal kui õppisin.<br>
+        </p>
+    </div>
 
-    <section class="juhan-portfolio-promo">
+    <section class="juhan-portfolio-promo" style="text-align: center; margin: 40px 0;">
         <h2 class="juhan-title">🍏 Juhani lahe portfoolio</h2>
-    
-        <p class="juhan-description">
-            Siit leiad minu ainemapi – projektid, harjutused ja arenduse teekonna.
-        </p>
-    
-        <a 
-            href="https://pluuto960.github.io/TarkvaraArendusProtsessTARpe24JuhanH/" 
-            class="juhan-button"
-            target="_blank"
-        >
-            Vaata minu ainemappi
-        </a>
+        <p class="juhan-description">Siit leiad minu ainemapi – projektid, harjutused ja arenduse teekonna.</p>
+        <a href="https://pluuto960.github.io/TarkvaraArendusProtsessTARpe24JuhanH/" class="juhan-button" target="_blank">Vaata minu ainemappi</a>
     </section>
-    
-    <!-- Rasmus -->
+
     <div class="rasmus-wrapper">
-
-        <div class="rasmus-badge">
-            Rasmuse ainemapp
-        </div>
-    
+        <div class="rasmus-badge">Rasmuse ainemapp</div>
         <h2 class="rasmus-title">
-            <a href="https://rxsss739.github.io/TarkvaraArendusprotsessTARpe24RasmusKunnus/">
-                Ainemapi link
-            </a>
+            <a href="https://rxsss739.github.io/TarkvaraArendusprotsessTARpe24RasmusKunnus/">Ainemapi link</a>
         </h2>
-    
-        <p class="rasmus-description">
-            Ainemapis on minu erialal õpitud ained ja minust infot.
-        </p>
-    
-        <p class="rasmus-slogan">
-            Redbull annab tiivad
-        </p>
-    
-    </div>    
-    <!-- Rasmus -->
+        <p class="rasmus-description">Ainemapis on minu erialal õpitud ained ja minust infot.</p>
+        <p class="rasmus-slogan">Redbull annab tiivad</p>
+    </div>
 
-    <!-- Siim -->
     <section class="siimAinemapp2026-container">
         <h2 class="siimAinemapp2026-title">🤖 Siim Ainemapp</h2>
-        
-        <p class="siimAinemapp2026-slogan">
-          "Loon tulevikku ühe koodi rea haaval😎."
-        </p>
-      
-        <p class="siimAinemapp2026-description">
-            Siin on minu ainemapp.
-        </p>
-      
-        <a href="https://siim-byte.github.io/TarkvaraArendusprotsessTARpe24SiimBeloi/" class="siimAinemapp2026-button">
-          🚀 Ava Ainemapp
-        </a>
-      
+        <p class="siimAinemapp2026-slogan">"Loon tulevikku ühe koodi rea haaval😎."</p>
+        <p class="siimAinemapp2026-description">Siin on minu ainemapp.</p>
+        <a href="https://siim-byte.github.io/TarkvaraArendusprotsessTARpe24SiimBeloi/" class="siimAinemapp2026-button">🚀 Ava Ainemapp</a>
         <div class="siimAinemapp2026-dynamic">
-          📅 Tänane kuupäev: <span id="siimAinemapp2026-date"></span>
+            📅 Tänane kuupäev: <span id="siimAinemapp2026-date"></span>
         </div>
-      </section>
-      <script>
-        const siimAinemapp2026_todayDateObject = new Date();
-        document.getElementById("siimAinemapp2026-date").textContent =
-          siimAinemapp2026_todayDateObject.toLocaleDateString();
-      </script>
-      <!-- Siim -->
+    </section>
 
-    <div style="
-    margin-top:60px;
-    padding:50px;
-    background:linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #9900ff);
-    border-radius:30px;
-    box-shadow:0 0 50px yellow;
-    transform:rotate(-2deg) scale(1.05);
-">
+    <div style="margin: 60px auto; padding: 50px; max-width: 800px; background: linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #9900ff); border-radius: 30px; box-shadow: 0 0 50px yellow; transform: rotate(-2deg); text-align: center;">
+        <h1 style="font-size: 50px; color: black; text-shadow: 3px 3px 0 white;">⚡ MARTTEN KAJA ⚡<br/>mida vaja???</h1>
+        <p style="font-size: 22px; background: black; color: #00ff00; padding: 20px; border-radius: 20px; border: 3px solid white; font-family: 'Courier New', monospace;">
+            Minu leht sisaldab MINU STIILIS minu õpitud aineid!!!<br/>
+            Seal on kirjas teemad jnejne... 🤯<br/><br/>
+            Seal on ka minu tutvustus ja pilt.<br/>
+            Lehe stiil on tehtud TEHISINTELLEKTIGA 🤖🔥
+        </p>
+        <a href="https://matumatumatumatumatu.github.io/TarkvaraArendusprotsessTARpe24MarttenKaja/" style="display: inline-block; margin-top: 30px; padding: 20px 40px; font-size: 25px; font-weight: bold; background: black; color: yellow; text-decoration: none; border: 5px solid white; border-radius: 50px; box-shadow: 0 0 20px cyan, 0 0 40px magenta; transform: rotate(3deg);">🚀 VAATA LEHTE KOHE 🚀</a>
+    </div>
 
-    <h1 style="
-        font-size:50px;
-        color:black;
-        text-shadow:3px 3px 0 white;
-        animation:none;
-    ">
-        ⚡ MARTTEN KAJA ⚡<br/>
-        mida vaja???
-    </h1>
+    <script>
+        // Saimon Time
+        const saimonTimeEl = document.getElementById("saimonTime");
+        if (saimonTimeEl) {
+            saimonTimeEl.textContent = "Viimane külastus: " + new Date().toLocaleString();
+        }
 
-    <p style="
-        font-size:22px;
-        background:black;
-        color:#00ff00;
-        padding:20px;
-        border-radius:20px;
-        border:3px solid white;
-        font-family:'Courier New', monospace;
-    ">
-        Minu leht sisaldab MINU STIILIS minu õpitud aineid!!!<br/>
-        Seal on kirjas teemad jnejne... 🤯<br/><br/>
-        Seal on ka minu tutvustus ja pilt.<br/>
-        Lehe stiil on tehtud TEHISINTELLEKTIGA 🤖🔥
-    </p>
-
-    <a href="https://matumatumatumatumatu.github.io/TarkvaraArendusprotsessTARpe24MarttenKaja/"
-       style="
-            display:inline-block;
-            margin-top:30px;
-            padding:20px 40px;
-            font-size:25px;
-            font-weight:bold;
-            background:black;
-            color:yellow;
-            text-decoration:none;
-            border:5px solid white;
-            border-radius:50px;
-            box-shadow:0 0 20px cyan, 0 0 40px magenta;
-            transform:rotate(3deg);
-       ">
-       🚀 VAATA LEHTE KOHE 🚀
-    </a>
-
-</div>
-
-<script>
-/* dünaamiline element */
-const now = new Date();
-document.getElementById("saimonTime").textContent =
-"Viimane külastus: " + now.toLocaleString();
-</script>
-
->>>>>>> d0c212a58e0b1005d3a51fc748a3186e9ec6d29b
+        // Siim Date
+        const siimDateEl = document.getElementById("siimAinemapp2026-date");
+        if (siimDateEl) {
+            siimDateEl.textContent = new Date().toLocaleDateString();
+        }
+    </script>
 </body>
 </html>
