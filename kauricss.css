@@ -63,6 +63,15 @@ a#KaurP24 {
         color: #90caf9;
     }
 
+img#KaurP24A {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+img#KaurP24B {
+    max-width: 850px;
+    max-height: 450px;
+}
 
 
 @keyframes kaurMove {
