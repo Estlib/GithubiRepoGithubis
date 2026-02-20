@@ -4,6 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        /* =========================
+           SAVVA SECTION STYLE
+           ========================= */
+        
+        .savva {
+            display: flex;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+        
+        .savva > div {
+            max-width: 900px;
+            width: 100%;
+            background: linear-gradient(
+                135deg,
+                #ffffff 0%,
+                #fff2f2 60%,
+                #ffe5e5 100%
+            );
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 15px 40px rgba(196, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .savva > div:hover {
+            transform: translateY(-6px);
+        }
+        
+        .savva h3 {
+    text-align: center;
+    color: #c40000;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.savva h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #c40000;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+        
+        .savva div {
+            color: #444;
+            line-height: 1.7;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+        
+        /* PILDID ÜHESUGUSEKS */
+        
+        .savva img {
+            width: 280px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 14px;
+            margin: 15px;
+            box-shadow: 0 10px 25px rgba(196, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .savva img:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 600px) {
+            .savva img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+        
+        </style>
 </head>
 <body>
     
@@ -193,7 +273,16 @@
     </section>
 
     <section class="savva">
-        
+            <div>
+                <h3>Visual Studio Code</h3>
+                Visual Stuido Code on mugav koodiredaktor, mis toetab palju erinevaid keeli. VSCode võimaldab<br>
+                 luua projekti arhitektuuri, lähtekoodi kirjutada ja hallata, debagida ja kasutada laiendusi tasuta.<br>
+                 VSCode arendus algas aastal 2014 ja esimene stabiilne versioon ilmus 2016 aasta aprillis. VSCode loodi, kuna <br>
+                 Microsoft soovis luua kerge, kiire ja mitmel operatsioonisüsteemil töötava tööriista. VSCode-i arendas <br>
+                 peamiselt Microsofti arendustiim.  <br>
+                 <img src="data:image/png;base64,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" alt="vscode"></img>
+                 <img src="https://user-images.githubusercontent.com/35271042/118224532-3842c400-b438-11eb-923d-a5f66fa6785a.png" alt="vscode funktsioonid">
+            </div>
     </section>
 
     <section class="enrique">
