@@ -1,0 +1,54 @@
+/* ROOT */
+#ck-case {
+    margin: 40px 0;
+    font-family: Georgia, serif;
+}
+
+/* CONTAINER */
+#ck-case .ck-case-container {
+    max-width: 700px;
+    margin: auto;
+    background: #14120e;
+    color: #f4e6c1;
+    padding: 30px;
+    border: 2px solid #c9a34e;
+}
+
+/* TITLES */
+#ck-case h2 {
+    color: #c9a34e;
+    text-align: center;
+}
+
+/* LOGO */
+#ck-case .ck-case-logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 120px;
+}
+
+/* TEXT */
+#ck-case .ck-case-desc {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* BLOCKS */
+#ck-case .ck-case-block {
+    margin-top: 20px;
+}
+
+/* IMAGE */
+#ck-case .ck-case-img {
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid #c9a34e;
+}
+#ck-case .ck-case-img {
+    width: 100%;
+    max-width: 350px;   /* controls size */
+    height: auto;
+
+    display: block;
+    margin: 15px auto;
+}
