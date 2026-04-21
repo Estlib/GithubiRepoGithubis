@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="juhanstyle.css">
+    <link rel="stylesheet" href="CKStyle.css">
 
     <title>Konfliktoorium</title>
 
@@ -1172,5 +1173,76 @@ function AironLooTaeheSaduX() {
 
 </script>
 
+<!-- ===================CHRISTOFER KRABBI OSA===========-->
+<section id="ck-section">
+
+    <div class="ck-container">
+
+        <h2 class="ck-title">⚔️ Chronicles of CK ⚔️</h2>
+
+        <p class="ck-slogan">
+            <span id="ck-typed-text"></span>
+        </p>
+
+        <p class="ck-desc">
+            A medieval-themed portfolio showcasing web applications, system design,
+            and creative projects built with modern technologies... with medieval vibes.
+        </p>
+
+        <a class="ck-button" href="https://christoferkrabbi.github.io/TarkvaraarendusprotsessidealsusedTARpe24ChristoferKrabbi/" target="_blank">
+            Enter the Realm
+        </a>
+
+        <div class="ck-quests">
+        </div>
+
+    </div>
+
+    <!-- Torch -->
+    <div id="ck-torch"></div>
+
+    <script>
+        (function () {
+            const section = document.getElementById("ck-section");
+            if (!section) return;
+        
+            const torch = section.querySelector("#ck-torch");
+            const textEl = section.querySelector("#ck-typed-text");
+        
+            /* TORCH (FIXED + NOT TOO DARK) */
+            section.addEventListener("mousemove", (e) => {
+                const rect = section.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+        
+                torch.style.background = `
+                    radial-gradient(
+                        circle 140px at ${x}px ${y}px,
+                        rgba(255, 180, 60, 0.12),
+                        rgba(0, 0, 0, 0.85) 70%
+                    )
+                `;
+            });
+        
+            /* TYPING EFFECT */
+            const text = "Forge Code. Conquer Systems.";
+            let i = 0;
+        
+            function typeEffect() {
+                if (!textEl) return;
+                if (i < text.length) {
+                    textEl.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeEffect, 40);
+                }
+            }
+        
+            typeEffect();
+        
+        })();
+        </script>
+</section>
+
+</section>
 </body>
 </html>

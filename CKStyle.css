@@ -1,0 +1,84 @@
+/* ROOT */
+#ck-section {
+    position: relative;
+    font-family: Georgia, serif;
+    margin: 40px 0;
+}
+
+/* CONTAINER */
+#ck-section .ck-container {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(20, 18, 14, 0.98);
+    color: #f4e6c1;
+    padding: 30px;
+    border: 2px solid #c9a34e;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* TEXT */
+#ck-section .ck-title {
+    color: #c9a34e;
+}
+
+#ck-section .ck-slogan {
+    font-style: italic;
+    margin-bottom: 10px;
+    min-height: 20px;
+}
+
+#ck-section .ck-desc {
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+#ck-section .ck-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #c9a34e;
+    color: #14120e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ck-section .ck-button:hover {
+    background: #e0b85c;
+}
+
+/* QUESTS */
+#ck-section .ck-quests {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#ck-section .ck-card {
+    width: 160px;
+    min-height: 220px;
+
+    background-image: url("/images/parchment.jpg");
+    background-size: cover;
+    background-position: center;
+
+    padding: 15px;
+    border: 2px solid #b8964a;
+
+    color: #2b1e0f;
+}
+
+/* 🔥 FIXED TORCH */
+#ck-section #ck-torch {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+
+    background: radial-gradient(
+        circle 120px at center,
+        rgba(255, 180, 60, 0.10),
+        rgba(0, 0, 0, 0.85) 70%
+    );
+}
